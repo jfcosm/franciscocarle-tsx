@@ -1,4 +1,4 @@
-// Version 1.3
+// Version 1.4
 import React, { useState } from 'react';
 import { Mail, Linkedin, Phone, Heart, Copy, Check } from 'lucide-react';
 import { PROFILE, TRANSLATIONS } from '../constants';
@@ -84,7 +84,7 @@ const Footer: React.FC<FooterProps> = ({ lang = 'es' }) => {
         <div className="border-t border-slate-200 dark:border-slate-800/50 pt-8 flex flex-col md:flex-row justify-between items-center text-slate-500 dark:text-slate-400 text-sm">
           <p>© {new Date().getFullYear()} Francisco Carle. {content.rights}</p>
           <p className="mt-2 md:mt-0 flex items-center gap-1">
-            {content.made_by} <Heart className="w-4 h-4 text-red-500 fill-current" /> en React & Tailwind por 
+            {content.made_by} <Heart className="w-4 h-4 text-red-500 fill-current" /> {content.tech_by} 
             <a href="https://www.melodialab.net" target="_blank" rel="noreferrer" className="text-primary-600 dark:text-primary-400 font-semibold hover:underline ml-1">
               MelodIA La♭
             </a>

@@ -1,4 +1,4 @@
-// Version 1.3
+// Version 1.4
 import React, { useState, useEffect } from 'react';
     import { Menu, X, Code, Music, Sun, Moon, Globe, MessageCircle } from 'lucide-react';
     import { NAV_ITEMS, TRANSLATIONS, PROFILE } from '../constants';

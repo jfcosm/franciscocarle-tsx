@@ -1,4 +1,4 @@
-// Version 1.3
+// Version 1.4
 import { ReactNode } from "react";
 
 export interface NavItem {
@@ -87,6 +87,7 @@ export interface Translations {
       subtitle: string;
       rights: string;
       made_by: string;
+      tech_by: string;
       copy_email: string;
       copied: string;
     }

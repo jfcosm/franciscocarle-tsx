@@ -1,4 +1,4 @@
-// Version 1.3
+// Version 1.4
 import React from 'react';
 import { ArrowRight, Code, Music } from 'lucide-react';
 import { PROFILE, TRANSLATIONS } from '../constants';

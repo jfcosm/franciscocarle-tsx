@@ -1,4 +1,4 @@
-// Version 1.3
+// Version 1.4
 import { Project, NavItem, Translations } from './types';
 import { 
   Code, 
@@ -144,7 +144,7 @@ export const TRANSLATIONS: Translations = {
       listen_btn: 'Escuchar en Apple Music', studio_title: 'Estudio Virtual'
     },
     titles: { philosophy: 'Filosofía Híbrida', projects: 'Vibe Coding', music: 'Sonido & Atmósfera', experience: 'Experiencia Profesional', contact: 'Hablemos' },
-    footer: { title: 'Hablemos', subtitle: 'Ya sea para potenciar tu equipo ágil, desarrollar una plataforma compleja o crear la música de tu próximo proyecto.', rights: 'Todos los derechos reservados.', made_by: 'Hecho con', copy_email: 'Copiar Email', copied: '¡Copiado!' }
+    footer: { title: 'Hablemos', subtitle: 'Ya sea para potenciar tu equipo ágil, desarrollar una plataforma compleja o crear la música de tu próximo proyecto.', rights: 'Todos los derechos reservados.', made_by: 'Hecho con', tech_by: 'en React & Tailwind por', copy_email: 'Copiar Email', copied: '¡Copiado!' }
   },
   en: {
     nav: { home: 'Home', philosophy: 'Philosophy', projects: 'Projects', music: 'Music', experience: 'Experience', contact_btn: 'Contact Me' },
@@ -200,7 +200,7 @@ export const TRANSLATIONS: Translations = {
       listen_btn: 'Listen on Apple Music', studio_title: 'Virtual Studio'
     },
     titles: { philosophy: 'Hybrid Philosophy', projects: 'Vibe Coding', music: 'Sound & Atmosphere', experience: 'Professional Experience', contact: 'Let\'s Talk' },
-    footer: { title: 'Let\'s Talk', subtitle: 'Whether to boost your agile team, develop a complex platform, or create music for your next project.', rights: 'All rights reserved.', made_by: 'Made with', copy_email: 'Copy Email', copied: 'Copied!' }
+    footer: { title: 'Let\'s Talk', subtitle: 'Whether to boost your agile team, develop a complex platform, or create music for your next project.', rights: 'All rights reserved.', made_by: 'Made with', tech_by: 'in React & Tailwind by', copy_email: 'Copy Email', copied: 'Copied!' }
   },
   fr: {
     nav: { home: 'Accueil', philosophy: 'Philosophie', projects: 'Projets', music: 'Musique', experience: 'Expérience', contact_btn: 'Contactez-moi' },
@@ -255,9 +255,8 @@ export const TRANSLATIONS: Translations = {
       listen_btn: 'Écouter sur Apple Music', studio_title: 'Studio Virtuel'
     },
     titles: { philosophy: 'Philosophie Hybride', projects: 'Vibe Coding', music: 'Son & Atmosphère', experience: 'Expérience Professionnelle', contact: 'Parlons' },
-    footer: { title: 'Parlons', subtitle: 'Pour booster votre équipe agile ou développer votre plateforme.', rights: 'Tous droits réservés.', made_by: 'Fait avec', copy_email: 'Copier Email', copied: 'Copié !' }
+    footer: { title: 'Parlons', subtitle: 'Pour booster votre équipe agile ou développer votre plateforme.', rights: 'Tous droits réservés.', made_by: 'Fait avec', tech_by: 'en React & Tailwind par', copy_email: 'Copier Email', copied: 'Copié !' }
   },
-  // Adding translations for other languages with simplified job descriptions to fit context
   it: {
     nav: { home: 'Home', philosophy: 'Filosofia', projects: 'Progetti', music: 'Musica', experience: 'Esperienza', contact_btn: 'Contattami' },
     hero: { role: 'Senior Scrum Master (7+ Anni) | Agile Coach', tagline_1: 'Tecnologia', tagline_2: '+ Musica', tagline_3: 'allo stesso livello.', synthesis: 'Costruisco tecnologia e musica con la stessa filosofia.', cta_portfolio: 'Vedi Portfolio', cta_linkedin: 'LinkedIn', years_exp: 'Anni Exp Agile', albums: 'Album', teams: 'Team Guidati', available: 'Disponibile' },
@@ -271,7 +270,7 @@ export const TRANSLATIONS: Translations = {
     },
     music: { profile_label: 'Profilo Musicale', main_desc: 'Musica atmosferica e rock melodico.', discography_title: 'Discografia', discography_desc: '2 Album e 4 Singoli.', production_title: 'Produzione', production_desc: 'Musica originale per TV.', listen_btn: 'Ascolta su Apple Music', studio_title: 'Studio Virtuale' },
     titles: { philosophy: 'Filosofia Ibrida', projects: 'Vibe Coding', music: 'Suono', experience: 'Esperienza', contact: 'Parliamo' },
-    footer: { title: 'Parliamo', subtitle: 'Per il tuo prossimo progetto.', rights: 'Diritti riservati.', made_by: 'Fatto con', copy_email: 'Copia Email', copied: 'Copiato!' }
+    footer: { title: 'Parliamo', subtitle: 'Per il tuo prossimo progetto.', rights: 'Diritti riservati.', made_by: 'Fatto con', tech_by: 'in React & Tailwind da', copy_email: 'Copia Email', copied: 'Copiato!' }
   },
   de: {
     nav: { home: 'Start', philosophy: 'Philosophie', projects: 'Projekte', music: 'Musik', experience: 'Erfahrung', contact_btn: 'Kontakt' },
@@ -286,7 +285,7 @@ export const TRANSLATIONS: Translations = {
     },
     music: { profile_label: 'Musikprofil', main_desc: 'Atmosphärischer Rock.', discography_title: 'Diskografie', discography_desc: '2 Alben, 4 Singles.', production_title: 'Produktion', production_desc: 'Originalmusik für TV.', listen_btn: 'Apple Music', studio_title: 'Virtuelles Studio' },
     titles: { philosophy: 'Philosophie', projects: 'Projekte', music: 'Musik', experience: 'Erfahrung', contact: 'Kontakt' },
-    footer: { title: 'Kontakt', subtitle: 'Für Ihr nächstes Projekt.', rights: 'Rechte vorbehalten.', made_by: 'Gemacht mit', copy_email: 'Email kopieren', copied: 'Kopiert!' }
+    footer: { title: 'Kontakt', subtitle: 'Für Ihr nächstes Projekt.', rights: 'Rechte vorbehalten.', made_by: 'Gemacht mit', tech_by: 'in React & Tailwind von', copy_email: 'Email kopieren', copied: 'Kopiert!' }
   },
   ja: {
     nav: { home: 'ホーム', philosophy: '哲学', projects: 'プロジェクト', music: '音楽', experience: '経験', contact_btn: 'お問い合わせ' },
@@ -301,10 +300,8 @@ export const TRANSLATIONS: Translations = {
     },
     music: { profile_label: '音楽', main_desc: 'アトモスフェリック・ロック。', discography_title: 'ディスコグラフィー', discography_desc: 'アルバム2枚、シングル4枚。', production_title: '制作', production_desc: 'TV向けオリジナル音楽。', listen_btn: 'Apple Music', studio_title: 'スタジオ' },
     titles: { philosophy: '哲学', projects: 'プロジェクト', music: '音楽', experience: '経歴', contact: 'お問い合わせ' },
-    footer: { title: 'お問い合わせ', subtitle: '新しいプロジェクトのために。', rights: '無断転載禁止。', made_by: '作成者', copy_email: 'メールをコピー', copied: 'コピーしました！' }
+    footer: { title: 'お問い合わせ', subtitle: '新しいプロジェクトのために。', rights: '無断転載禁止。', made_by: '作成者', tech_by: 'React & Tailwind で', copy_email: 'メールをコピー', copied: 'コピーしました！' }
   },
-  // Defaulting simplified translations for remaining languages to avoid excessive file size, 
-  // ensuring the app structure works.
   ko: {
     nav: { home: '홈', philosophy: '철학', projects: '프로젝트', music: '음악', experience: '경력', contact_btn: '문의하기' },
     hero: { role: '시니어 스크럼 마스터', tagline_1: '기술', tagline_2: '+ 음악', tagline_3: '동일한 수준.', synthesis: '기술과 음악의 조화.', cta_portfolio: '포트폴리오', cta_linkedin: 'LinkedIn', years_exp: '경력', albums: '앨범', teams: '팀', available: '가능' },
@@ -318,7 +315,7 @@ export const TRANSLATIONS: Translations = {
     },
     music: { profile_label: '음악', main_desc: '애트머스페릭 록.', discography_title: '디스코그래피', discography_desc: '앨범 2장.', production_title: '제작', production_desc: 'TV 음악.', listen_btn: 'Apple Music', studio_title: '스튜디오' },
     titles: { philosophy: '철학', projects: '프로젝트', music: '음악', experience: '경력', contact: '문의' },
-    footer: { title: '문의', subtitle: '프로젝트 문의.', rights: '판권 소유.', made_by: '제작', copy_email: '이메일 복사', copied: '복사됨!' }
+    footer: { title: '문의', subtitle: '프로젝트 문의.', rights: '판권 소유.', made_by: '제작', tech_by: 'React & Tailwind 로', copy_email: '이메일 복사', copied: '복사됨!' }
   },
   zh: {
     nav: { home: '首页', philosophy: '理念', projects: '项目', music: '音乐', experience: '经验', contact_btn: '联系我' },
@@ -333,7 +330,7 @@ export const TRANSLATIONS: Translations = {
     },
     music: { profile_label: '音乐', main_desc: '氛围摇滚。', discography_title: '唱片', discography_desc: '2张专辑。', production_title: '制作', production_desc: '原创音乐。', listen_btn: 'Apple Music', studio_title: '工作室' },
     titles: { philosophy: '理念', projects: '项目', music: '音乐', experience: '经验', contact: '联系' },
-    footer: { title: '联系', subtitle: '合作项目。', rights: '版权所有。', made_by: '制作', copy_email: '复制邮箱', copied: '已复制！' }
+    footer: { title: '联系', subtitle: '合作项目。', rights: '版权所有。', made_by: '制作', tech_by: '使用 React & Tailwind 由', copy_email: '复制邮箱', copied: '已复制！' }
   },
   ar: {
     nav: { home: 'الرئيسية', philosophy: 'الفلسفة', projects: 'المشاريع', music: 'الموسيقى', experience: 'الخبرة', contact_btn: 'تواصل معي' },
@@ -348,7 +345,7 @@ export const TRANSLATIONS: Translations = {
     },
     music: { profile_label: 'موسيقى', main_desc: 'روك جوي.', discography_title: 'أعمال', discography_desc: 'ألبومان.', production_title: 'إنتاج', production_desc: 'موسيقى أصلية.', listen_btn: 'Apple Music', studio_title: 'استوديو' },
     titles: { philosophy: 'فلسفة', projects: 'مشاريع', music: 'موسيقى', experience: 'خبرة', contact: 'تواصل' },
-    footer: { title: 'تواصل', subtitle: 'لمشروعك القادم.', rights: 'حقوق محفوظة.', made_by: 'صنع بـ', copy_email: 'نسخ البريد', copied: 'تم النسخ!' }
+    footer: { title: 'تواصل', subtitle: 'لمشروعك القادم.', rights: 'حقوق محفوظة.', made_by: 'صنع بـ', tech_by: 'في React & Tailwind بواسطة', copy_email: 'نسخ البريد', copied: 'تم النسخ!' }
   },
   uk: {
     nav: { home: 'Головна', philosophy: 'Філософія', projects: 'Проєкти', music: 'Музика', experience: 'Досвід', contact_btn: 'Зв\'язатися' },
@@ -363,7 +360,7 @@ export const TRANSLATIONS: Translations = {
     },
     music: { profile_label: 'Музика', main_desc: 'Рок.', discography_title: 'Дискографія', discography_desc: '2 альбоми.', production_title: 'Продакшн', production_desc: 'Оригінальна музика.', listen_btn: 'Apple Music', studio_title: 'Студія' },
     titles: { philosophy: 'Філософія', projects: 'Проєкти', music: 'Музика', experience: 'Досвід', contact: 'Контакти' },
-    footer: { title: 'Контакти', subtitle: 'Для проєкту.', rights: 'Всі права захищено.', made_by: 'Зроблено з', copy_email: 'Копіювати Email', copied: 'Скопійовано!' }
+    footer: { title: 'Контакти', subtitle: 'Для проєкту.', rights: 'Всі права захищено.', made_by: 'Зроблено з', tech_by: 'на React & Tailwind від', copy_email: 'Копіювати Email', copied: 'Скопійовано!' }
   },
   hi: {
     nav: { home: 'होम', philosophy: 'दर्शन', projects: 'प्रोजेक्ट्स', music: 'संगीत', experience: 'अनुभव', contact_btn: 'संपर्क' },
@@ -378,7 +375,7 @@ export const TRANSLATIONS: Translations = {
     },
     music: { profile_label: 'संगीत', main_desc: 'रॉक।', discography_title: 'डिस्कोग्राफी', discography_desc: '2 एल्बम।', production_title: 'उत्पादन', production_desc: 'मूल संगीत।', listen_btn: 'Apple Music', studio_title: 'स्टूडियो' },
     titles: { philosophy: 'दर्शन', projects: 'प्रोजेक्ट्स', music: 'संगीत', experience: 'अनुभव', contact: 'संपर्क' },
-    footer: { title: 'संपर्क', subtitle: 'प्रोजेक्ट के लिए।', rights: 'सुरक्षित।', made_by: 'बनाया', copy_email: 'ईमेल कॉपी करें', copied: 'कॉपी किया गया!' }
+    footer: { title: 'संपर्क', subtitle: 'प्रोजेक्ट के लिए।', rights: 'सुरक्षित।', made_by: 'बनाया', tech_by: 'React & Tailwind में', copy_email: 'ईमेल कॉपी करें', copied: 'कॉपी किया गया!' }
   },
   ta: {
     nav: { home: 'முகப்பு', philosophy: 'தத்துவம்', projects: 'திட்டங்கள்', music: 'இசை', experience: 'அனுபவம்', contact_btn: 'தொடர்பு' },
@@ -393,7 +390,7 @@ export const TRANSLATIONS: Translations = {
     },
     music: { profile_label: 'இசை', main_desc: 'ராக்.', discography_title: 'இசைத்தொகுப்பு', discography_desc: '2 ஆல்பங்கள்.', production_title: 'தயாரிப்பு', production_desc: 'இசை.', listen_btn: 'Apple Music', studio_title: 'ஸ்டுடியோ' },
     titles: { philosophy: 'தத்துவம்', projects: 'திட்டங்கள்', music: 'இசை', experience: 'அனுபவம்', contact: 'தொடர்பு' },
-    footer: { title: 'தொடர்பு', subtitle: 'திட்டத்திற்கு.', rights: 'உரிமைகள்.', made_by: 'உருவாக்கியவர்', copy_email: 'நகல்', copied: 'நகலெடுக்கப்பட்டது!' }
+    footer: { title: 'தொடர்பு', subtitle: 'திட்டத்திற்கு.', rights: 'உரிமைகள்.', made_by: 'உருவாக்கியவர்', tech_by: 'React & Tailwind மூலம்', copy_email: 'நகல்', copied: 'நகலெடுக்கப்பட்டது!' }
   },
   gu: {
     nav: { home: 'હોમ', philosophy: 'ફિલોસોફી', projects: 'પ્રોજેક્ટ્સ', music: 'સંગીત', experience: 'અનુભવ', contact_btn: 'સંપર્ક' },
@@ -408,7 +405,7 @@ export const TRANSLATIONS: Translations = {
     },
     music: { profile_label: 'સંગીત', main_desc: 'રોક.', discography_title: 'ડિસ્કોગ્રાફી', discography_desc: '2 આલ્બમ.', production_title: 'પ્રોડક્શન', production_desc: 'સંગીત.', listen_btn: 'Apple Music', studio_title: 'સ્ટુડિયો' },
     titles: { philosophy: 'ફિલોસોફી', projects: 'પ્રોજેક્ટ્સ', music: 'સંગીત', experience: 'અનુભવ', contact: 'સંપર્ક' },
-    footer: { title: 'સંપર્ક', subtitle: 'પ્રોજેક્ટ.', rights: 'હકો.', made_by: 'દ્વારા', copy_email: 'કોપી', copied: 'કોપી થયું!' }
+    footer: { title: 'સંપર્ક', subtitle: 'પ્રોજેક્ટ.', rights: 'હકો.', made_by: 'દ્વારા', tech_by: 'React & Tailwind માં', copy_email: 'કોપી', copied: 'કોપી થયું!' }
   },
   arn: {
     nav: { home: 'Tuwün', philosophy: 'Rakiduam', projects: 'Kudaw', music: 'Ülkantun', experience: 'Kimün', contact_btn: 'Nütram' },
@@ -423,6 +420,6 @@ export const TRANSLATIONS: Translations = {
     },
     music: { profile_label: 'Ülkantun', main_desc: 'Ülkantun.', discography_title: 'Ülkantun', discography_desc: '2 Epew.', production_title: 'Dewman', production_desc: 'We Ülkantun.', listen_btn: 'Apple Music', studio_title: 'Wenu Kudaw' },
     titles: { philosophy: 'Rakiduam', projects: 'Kudaw', music: 'Ülkantun', experience: 'Kimün', contact: 'Nütram' },
-    footer: { title: 'Nütram', subtitle: 'Kudaw.', rights: 'Kom zugu.', made_by: 'Dewmay', copy_email: 'Copy', copied: 'Copied!' }
+    footer: { title: 'Nütram', subtitle: 'Kudaw.', rights: 'Kom zugu.', made_by: 'Dewmay', tech_by: 'React & Tailwind mew', copy_email: 'Copy', copied: 'Copied!' }
   }
 };

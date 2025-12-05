@@ -1,4 +1,4 @@
-// Version 1.3
+// Version 1.4
 import React from 'react';
 import { JOB_IDS, TRANSLATIONS } from '../constants';
 import { Briefcase, Calendar, MapPin } from 'lucide-react';
