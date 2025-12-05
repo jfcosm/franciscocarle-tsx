@@ -1,18 +1,11 @@
-import React from 'react';
+// Version 1.1
 import { Job, Project, NavItem, Translations } from './types';
 import { 
   Code, 
   Music, 
   Users, 
-  Database, 
-  Layout, 
-  Cpu, 
   BookOpen, 
-  Music2, 
-  Mic2,
-  Linkedin,
-  Mail,
-  Smartphone
+  Mic2
 } from 'lucide-react';
 
 // Navigation
