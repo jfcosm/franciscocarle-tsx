@@ -1,3 +1,4 @@
+// Version 1.3
 import React from 'react';
 import { PROJECTS, TRANSLATIONS } from '../constants';
 import { ExternalLink } from 'lucide-react';
@@ -25,9 +26,9 @@ const Projects: React.FC<ProjectsProps> = ({ lang }) => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {PROJECTS.map((project, index) => (
+          {PROJECTS.map((project) => (
             <div 
-              key={index} 
+              key={project.id} 
               className="group bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl border border-white/20 dark:border-slate-700/50 rounded-xl overflow-hidden hover:border-slate-400 dark:hover:border-slate-500 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-900/10 dark:hover:shadow-primary-900/20 hover:-translate-y-1"
             >
               <div className="p-6 h-full flex flex-col">
@@ -52,7 +53,7 @@ const Projects: React.FC<ProjectsProps> = ({ lang }) => {
                 </h3>
                 
                 <p className="text-slate-600 dark:text-slate-300 text-sm mb-6 flex-grow leading-relaxed">
-                  {project.description}
+                  {content.descriptions[project.id]}
                 </p>
                 
                 <div className="flex flex-wrap gap-2 mt-auto">

@@ -1,4 +1,4 @@
-// Version 1.1
+// Version 1.3
 import React from 'react';
 
 const Background: React.FC = () => {

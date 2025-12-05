@@ -1,3 +1,4 @@
+// Version 1.3
 import React from 'react';
 import { Music as MusicIcon, Disc, Headphones, Mic2, Speaker, Piano, Guitar } from 'lucide-react';
 import { TRANSLATIONS, PROFILE } from '../constants';

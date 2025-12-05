@@ -1,3 +1,4 @@
+// Version 1.3
 import { ReactNode } from "react";
 
 export interface NavItem {
@@ -6,6 +7,7 @@ export interface NavItem {
 }
 
 export interface Project {
+  id: string;
   title: string;
   description: string;
   tags: string[];
@@ -39,7 +41,7 @@ export interface Translations {
       role: string;
       tagline_1: string;
       tagline_2: string;
-      tagline_3: string; // Added missing tagline part
+      tagline_3: string;
       synthesis: string;
       cta_portfolio: string;
       cta_linkedin: string;
@@ -60,7 +62,9 @@ export interface Translations {
     projects: {
       subtitle: string;
       stack_label: string;
+      descriptions: { [key: string]: string };
     };
+    jobs: { [key: string]: Job };
     music: {
       profile_label: string;
       main_desc: string;
@@ -83,6 +87,8 @@ export interface Translations {
       subtitle: string;
       rights: string;
       made_by: string;
+      copy_email: string;
+      copied: string;
     }
   }
 }

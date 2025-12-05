@@ -1,3 +1,4 @@
+// Version 1.3
 import React from 'react';
 import { SKILLS, TRANSLATIONS } from '../constants';
 import { CheckCircle2 } from 'lucide-react';

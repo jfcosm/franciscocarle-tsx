@@ -1,5 +1,6 @@
-import React from 'react';
-import { Mail, Linkedin, Phone, Heart } from 'lucide-react';
+// Version 1.3
+import React, { useState } from 'react';
+import { Mail, Linkedin, Phone, Heart, Copy, Check } from 'lucide-react';
 import { PROFILE, TRANSLATIONS } from '../constants';
 import { LanguageCode } from '../types';
 
@@ -10,6 +11,14 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ lang = 'es' }) => {
   const content = TRANSLATIONS[lang].footer;
   const titles = TRANSLATIONS[lang].titles;
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigator.clipboard.writeText(PROFILE.email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   return (
     <footer id="contact" className="bg-white/40 dark:bg-slate-900/60 backdrop-blur-xl border-t border-slate-200 dark:border-slate-800 pt-20 pb-10 transition-colors duration-300">
@@ -20,18 +29,31 @@ const Footer: React.FC<FooterProps> = ({ lang = 'es' }) => {
         </p>
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-16">
-          <a 
-            href={`mailto:${PROFILE.email}`} 
-            className="flex items-center gap-3 px-6 py-4 bg-white/50 dark:bg-slate-800/50 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-primary-500 transition-colors group w-full md:w-auto shadow-sm backdrop-blur-sm"
+          <button 
+            onClick={handleCopyEmail}
+            className="flex items-center gap-3 px-6 py-4 bg-white/50 dark:bg-slate-800/50 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-primary-500 hover:bg-white/80 dark:hover:bg-slate-800/80 transition-all group w-full md:w-auto shadow-sm backdrop-blur-sm cursor-pointer relative"
+            title={copied ? content.copied : content.copy_email}
           >
             <div className="p-2 bg-slate-100 dark:bg-slate-700 rounded-lg group-hover:bg-primary-500/20 transition-colors">
-              <Mail className="w-6 h-6 text-slate-500 dark:text-slate-400 group-hover:text-primary-600 dark:group-hover:text-primary-400" />
+              {copied ? (
+                <Check className="w-6 h-6 text-green-500" />
+              ) : (
+                <Mail className="w-6 h-6 text-slate-500 dark:text-slate-400 group-hover:text-primary-600 dark:group-hover:text-primary-400" />
+              )}
             </div>
             <div className="text-left">
-              <p className="text-xs text-slate-500 dark:text-slate-400">Email</p>
+              <p className="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1">
+                Email
+                {copied && <span className="text-green-500 font-bold ml-1">{content.copied}</span>}
+              </p>
               <p className="text-slate-800 dark:text-slate-200 font-medium">{PROFILE.email}</p>
             </div>
-          </a>
+            {!copied && (
+               <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <Copy className="w-4 h-4 text-slate-400" />
+               </div>
+            )}
+          </button>
 
           <a 
             href={PROFILE.linkedin}
