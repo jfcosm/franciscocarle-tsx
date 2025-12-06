@@ -1,4 +1,4 @@
-// Version 1.5
+// Version 1.6
 import React from 'react';
 import { ArrowRight, Code, Music } from 'lucide-react';
 import { PROFILE, TRANSLATIONS } from '../constants';
@@ -87,7 +87,7 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
               <img 
                 src={PROFILE.image} 
                 alt="Francisco Carle" 
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
             </div>
 
