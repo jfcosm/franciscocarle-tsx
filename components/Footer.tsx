@@ -1,4 +1,4 @@
-// Version 1.4
+// Version 1.5
 import React, { useState } from 'react';
 import { Mail, Linkedin, Phone, Heart, Copy, Check } from 'lucide-react';
 import { PROFILE, TRANSLATIONS } from '../constants';

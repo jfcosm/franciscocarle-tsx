@@ -1,4 +1,4 @@
-// Version 1.4
+// Version 1.5
 import { Project, NavItem, Translations } from './types';
 import { 
   Code, 
@@ -28,7 +28,7 @@ export const PROFILE = {
   location: "Santiago, Chile",
   linkedin: "https://www.linkedin.com/in/franciscocarle/",
   appleMusic: "https://music.apple.com/cl/artist/francisco-carle/1662050530",
-  image: "https://picsum.photos/400/400", 
+  image: "/perfil.jpg", 
 };
 
 // Projects Data
