@@ -1,6 +1,6 @@
 // Version 1.9
 import React from 'react';
-import { Music as MusicIcon, Disc, Headphones, Mic2, Speaker, Piano, Guitar } from 'lucide-react';
+import { Music as MusicIcon, Disc, Headphones, Mic2, Speaker, Piano, Guitar, ExternalLink } from 'lucide-react';
 import { TRANSLATIONS, PROFILE } from '../constants';
 import { LanguageCode } from '../types';
 
@@ -23,80 +23,83 @@ const MusicSection: React.FC<MusicProps> = ({ lang }) => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-stretch">
           {/* Discography/Stats */}
-          <div className="space-y-8 bg-white/40 dark:bg-slate-900/40 p-8 rounded-2xl backdrop-blur-xl border border-white/20 dark:border-white/5">
-            <div className="flex items-start gap-4">
-              <div className="p-3 bg-white dark:bg-slate-800 rounded-full text-secondary-600 dark:text-secondary-400 shadow-sm">
-                <Disc className="w-6 h-6" />
+          <div className="bg-white/40 dark:bg-slate-900/40 p-8 rounded-2xl backdrop-blur-xl border border-white/20 dark:border-white/5 shadow-lg flex flex-col justify-center">
+            <div className="space-y-8 mb-10">
+              <div className="flex items-start gap-5">
+                <div className="p-4 bg-white dark:bg-slate-800 rounded-2xl text-secondary-600 dark:text-secondary-400 shadow-sm shrink-0">
+                  <Disc className="w-8 h-8" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{content.discography_title}</h3>
+                  <p className="text-slate-600 dark:text-slate-300 text-base leading-relaxed">
+                    {content.discography_desc}
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white">{content.discography_title}</h3>
-                <p className="text-slate-600 dark:text-slate-300 mt-1">
-                  {content.discography_desc}
-                </p>
+
+              <div className="flex items-start gap-5">
+                <div className="p-4 bg-white dark:bg-slate-800 rounded-2xl text-secondary-600 dark:text-secondary-400 shadow-sm shrink-0">
+                  <Headphones className="w-8 h-8" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{content.production_title}</h3>
+                  <p className="text-slate-600 dark:text-slate-300 text-base leading-relaxed">
+                    {content.production_desc}
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <div className="p-3 bg-white dark:bg-slate-800 rounded-full text-secondary-600 dark:text-secondary-400 shadow-sm">
-                <Headphones className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white">{content.production_title}</h3>
-                <p className="text-slate-600 dark:text-slate-300 mt-1">
-                  {content.production_desc}
-                </p>
-              </div>
-            </div>
-
-            <div className="pt-6">
+            <div className="mt-auto pt-6 border-t border-slate-200 dark:border-slate-700/50">
               <a 
                 href={PROFILE.appleMusic}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-secondary-600 hover:bg-secondary-500 text-white rounded-full transition-colors font-medium shadow-lg shadow-secondary-900/20"
+                className="w-full group relative flex items-center justify-center gap-3 px-8 py-4 bg-[#FA243C] hover:bg-[#d61e32] text-white rounded-xl font-bold transition-all duration-300 shadow-lg shadow-red-500/20 hover:shadow-red-500/40 hover:-translate-y-1"
               >
-                <MusicIcon className="w-4 h-4" />
-                {content.listen_btn}
+                <MusicIcon className="w-5 h-5" />
+                <span>{content.listen_btn}</span>
+                <ExternalLink className="w-4 h-4 opacity-70 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>
 
-          {/* Redesigned Studio/Gear Section */}
-          <div className="relative bg-white/40 dark:bg-slate-900/40 border border-white/20 dark:border-white/10 rounded-2xl p-8 backdrop-blur-xl shadow-xl">
+          {/* Studio/Gear Section */}
+           <div className="relative bg-white/40 dark:bg-slate-900/40 border border-white/20 dark:border-white/10 rounded-2xl p-8 backdrop-blur-xl shadow-xl flex flex-col justify-center">
              <div className="absolute -top-4 -right-4 w-20 h-20 bg-secondary-500/20 rounded-full blur-xl"></div>
              
-             <h4 className="text-slate-900 dark:text-white font-bold mb-6 border-b border-slate-200 dark:border-slate-700/50 pb-4 flex items-center gap-2">
-                <Speaker className="w-5 h-5 text-secondary-500" />
+             <h4 className="text-slate-900 dark:text-white font-bold mb-8 border-b border-slate-200 dark:border-slate-700/50 pb-4 flex items-center gap-2 text-lg">
+                <Speaker className="w-6 h-6 text-secondary-500" />
                 {content.studio_title}
              </h4>
              
-             <div className="space-y-6">
+             <div className="space-y-8">
                 {/* Software */}
                 <div>
-                   <h5 className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-3">Software & DAW</h5>
+                   <h5 className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-4">Software & DAW</h5>
                    <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-slate-100/80 dark:bg-slate-800/80 rounded-lg text-sm text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700">Logic Pro X (Expert)</span>
-                      <span className="px-3 py-1 bg-slate-100/80 dark:bg-slate-800/80 rounded-lg text-sm text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700">Arturia V Collection</span>
-                      <span className="px-3 py-1 bg-slate-100/80 dark:bg-slate-800/80 rounded-lg text-sm text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700">Analog Lab</span>
+                      <span className="px-3 py-2 bg-slate-100/80 dark:bg-slate-800/80 rounded-lg text-sm text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 shadow-sm">Logic Pro X (Expert)</span>
+                      <span className="px-3 py-2 bg-slate-100/80 dark:bg-slate-800/80 rounded-lg text-sm text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 shadow-sm">Arturia V Collection</span>
+                      <span className="px-3 py-2 bg-slate-100/80 dark:bg-slate-800/80 rounded-lg text-sm text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 shadow-sm">Analog Lab</span>
                    </div>
                 </div>
 
                 {/* Hardware */}
                 <div>
-                   <h5 className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-3">Hardware & Instruments</h5>
-                   <div className="flex flex-wrap gap-2">
-                      <div className="flex items-center gap-2 px-3 py-1 bg-slate-100/80 dark:bg-slate-800/80 rounded-lg text-sm text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700">
-                         <Guitar className="w-3 h-3 text-secondary-500" />
+                   <h5 className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-4">Hardware & Instruments</h5>
+                   <div className="flex flex-wrap gap-3">
+                      <div className="flex items-center gap-2 px-3 py-2 bg-slate-100/80 dark:bg-slate-800/80 rounded-lg text-sm text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 shadow-sm">
+                         <Guitar className="w-4 h-4 text-secondary-500" />
                          <span>Electric Guitars</span>
                       </div>
-                      <div className="flex items-center gap-2 px-3 py-1 bg-slate-100/80 dark:bg-slate-800/80 rounded-lg text-sm text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700">
-                         <Piano className="w-3 h-3 text-secondary-500" />
+                      <div className="flex items-center gap-2 px-3 py-2 bg-slate-100/80 dark:bg-slate-800/80 rounded-lg text-sm text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 shadow-sm">
+                         <Piano className="w-4 h-4 text-secondary-500" />
                          <span>MIDI Controllers</span>
                       </div>
-                      <div className="flex items-center gap-2 px-3 py-1 bg-slate-100/80 dark:bg-slate-800/80 rounded-lg text-sm text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700">
-                         <Mic2 className="w-3 h-3 text-secondary-500" />
+                      <div className="flex items-center gap-2 px-3 py-2 bg-slate-100/80 dark:bg-slate-800/80 rounded-lg text-sm text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 shadow-sm">
+                         <Mic2 className="w-4 h-4 text-secondary-500" />
                          <span>Shure / Rode Mics</span>
                       </div>
                    </div>

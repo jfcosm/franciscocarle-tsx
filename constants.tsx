@@ -54,7 +54,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "ensayemos",
-    title: "Ensayemos",
+    title: "Verso",
     description: "Gestión para bandas: votación de ensayos, setlists interactivos y repositorio de acordes. Resuelve problemas reales de logística musical.",
     tags: ["Firebase", "Real-time DB", "React", "Management"],
     link: "#",
@@ -66,7 +66,7 @@ export const PROJECTS: Project[] = [
     title: "Emaús",
     description: "Sistema integral de gestión parroquial: sacramentos, finanzas, mensajería estilo WhatsApp y red social interna.",
     tags: ["Complex System", "SaaS", "Finance", "Social"],
-    link: "#",
+    link: "https://www.emaus.social",
     category: "tech",
     icon: <Users className="w-6 h-6 text-blue-400" />
   },
@@ -405,81 +405,6 @@ export const TRANSLATIONS: Translations = {
     },
     music: { profile_label: 'إبداع', main_desc: 'موسيقي ومنتج.', discography_title: 'أعمال', discography_desc: 'ألبومان.', production_title: 'إنتاج', production_desc: 'موسيقى أصلية.', listen_btn: 'Apple Music', studio_title: 'استوديو' },
     titles: { philosophy: 'الملف', projects: 'مشاريع', music: 'موسيقى', experience: 'خبرة', contact: 'تواصل' },
-    footer: { title: 'تواصل', subtitle: 'لمشروعك القادم.', rights: 'حقوق محفوظة.', made_by: 'صنع بـ', tech_by: 'في React & Tailwind بواسطة', copy_email: 'نسخ البريد', copied: 'تم النسخ!', github: 'GitHub' }
-  },
-  uk: {
-    nav: { home: 'Головна', philosophy: 'Філософія', projects: 'Проєкти', music: 'Музика', experience: 'Досвід', contact_btn: 'Зв\'язатися' },
-    hero: { role: 'Scrum Master', tagline_1: 'Agile лідерство', tagline_2: '+ Тех бачення', tagline_3: 'для результатів.', synthesis: 'Поєднання Agile менеджменту та технічного досвіду.', cta_portfolio: 'Портфоліо', cta_linkedin: 'LinkedIn', years_exp: 'Досвід', albums: 'Альбоми', teams: 'Команди', available: 'Доступний', github: 'GitHub' },
-    about: { main_text: 'Використання технічного бекграунду для доставки цінності.', agile_title: 'Agile лідерство', agile_desc: 'Коучинг команд.', dev_title: 'Тех експертиза', dev_desc: 'Комунікація з інженерами.', soft_title: 'Комунікація та стратегія', soft_desc: 'Управління стейкхолдерами та мультикультурне лідерство.' },
-    projects: { subtitle: 'Розробка додатків', stack_label: 'Стек:', descriptions: { armonix: "Музичний інструмент.", palabra: "Літургійна платформа.", ensayemos: "Менеджмент груп.", emaus: "Система управління.", melodialab: "Студія розробки." } },
-    jobs: {
-      thomson: { company: "Thomson Reuters", role: "Python розробник", period: "Бер 2025 – Зараз", location: "Чилі", description: ["Модульна архітектура.", "Боти."], skills: ["Python"] },
-      onikom: { company: "Onikom Latam", role: "Scrum Master", period: "Кві 2024 – Гру 2024", location: "Мексика", description: ["Лідерство команд.", "Покращення доставки."], skills: ["Agile"] },
-      soho: { company: "SOHO", role: "Agile Coach", period: "2022 – 2023", location: "Чилі", description: ["Agile трансформація.", "Design Thinking."], skills: ["Kanban"] },
-      cencosud: { company: "Cencosud", role: "Scrum Master", period: "2018 – 2021", location: "Чилі", description: ["Фінтех проєкти.", "Agile культура."], skills: ["Agile"] }
-    },
-    music: { profile_label: 'Креатив', main_desc: 'Музикант та продюсер.', discography_title: 'Дискографія', discography_desc: '2 альбоми.', production_title: 'Продакшн', production_desc: 'Оригінальна музика.', listen_btn: 'Apple Music', studio_title: 'Студія' },
-    titles: { philosophy: 'Профіль', projects: 'Проєкти', music: 'Музика', experience: 'Досвід', contact: 'Контакти' },
-    footer: { title: 'Контакти', subtitle: 'Для проєкту.', rights: 'Всі права захищено.', made_by: 'Зроблено з', tech_by: 'на React & Tailwind від', copy_email: 'Копіювати Email', copied: 'Скопійовано!', github: 'GitHub' }
-  },
-  hi: {
-    nav: { home: 'होम', philosophy: 'दर्शन', projects: 'प्रोजेक्ट्स', music: 'संगीत', experience: 'अनुभव', contact_btn: 'संपर्क' },
-    hero: { role: 'Scrum Master', tagline_1: 'एजाइल नेतृत्व', tagline_2: '+ तकनीकी दृष्टि', tagline_3: 'परिणामों के लिए।', synthesis: 'एजाइल प्रबंधन और तकनीकी विशेषज्ञता।', cta_portfolio: 'पोर्टफोलियो', cta_linkedin: 'LinkedIn', years_exp: 'अनुभव', albums: 'एल्बम', teams: 'टीमें', available: 'उपलब्ध', github: 'GitHub' },
-    about: { main_text: 'मूल्य वितरण के लिए तकनीकी पृष्ठभूमि का उपयोग।', agile_title: 'एजाइल नेतृत्व', agile_desc: 'टीम कोचिंग।', dev_title: 'तकनीकी विशेषज्ञता', dev_desc: 'इंजीनियरों के साथ संवाद।', soft_title: 'संचार और रणनीति', soft_desc: 'हितधारक प्रबंधन और बहुसांस्कृतिक नेतृत्व।' },
-    projects: { subtitle: 'ऐप विकास', stack_label: 'स्टैक:', descriptions: { armonix: "संगीत उपकरण।", palabra: "धार्मिक मंच।", ensayemos: "बैंड प्रबंधन।", emaus: "प्रबंधन प्रणाली।", melodialab: "विकास स्टूडियो।" } },
-    jobs: {
-      thomson: { company: "Thomson Reuters", role: "Python डेवलपर", period: "2025 – वर्तमान", location: "चिली", description: ["मॉड्यूलर आर्किटेक्चर।", "बॉट्स।"], skills: ["Python"] },
-      onikom: { company: "Onikom", role: "Scrum Master", period: "2024", location: "मेक्सिको", description: ["टीम नेतृत्व।", "डिलीवरी में सुधार।"], skills: ["Agile"] },
-      soho: { company: "SOHO", role: "Agile Coach", period: "2022 – 2023", location: "चिली", description: ["एजाइल परिवर्तन।"], skills: ["Kanban"] },
-      cencosud: { company: "Cencosud", role: "Scrum Master", period: "2018 – 2021", location: "चिली", description: ["फिनटेक।"], skills: ["Agile"] }
-    },
-    music: { profile_label: 'रचनात्मक', main_desc: 'संगीतकार और निर्माता।', discography_title: 'डिस्कोग्राफी', discography_desc: '2 एल्बम।', production_title: 'उत्पादन', production_desc: 'मूल संगीत।', listen_btn: 'Apple Music', studio_title: 'स्टूडियो' },
-    titles: { philosophy: 'प्रोफ़ाइल', projects: 'प्रोजेक्ट्स', music: 'संगीत', experience: 'अनुभव', contact: 'संपर्क' },
-    footer: { title: 'संपर्क', subtitle: 'प्रोजेक्ट के लिए।', rights: 'सुरक्षित।', made_by: 'बनाया', tech_by: 'React & Tailwind में', copy_email: 'ईमेल कॉपी करें', copied: 'कॉपी किया गया!', github: 'GitHub' }
-  },
-  ta: {
-    nav: { home: 'முகப்பு', philosophy: 'தத்துவம்', projects: 'திட்டங்கள்', music: 'இசை', experience: 'அனுபவம்', contact_btn: 'தொடர்பு' },
-    hero: { role: 'Scrum Master', tagline_1: 'தலைமை', tagline_2: 'தொழில்நுட்பம்', tagline_3: 'முடிவுகளுக்கு.', synthesis: 'தொழில்நுட்பம் மற்றும் மேலாண்மை.', cta_portfolio: 'போர்ட்ஃபோலியோ', cta_linkedin: 'LinkedIn', years_exp: 'அனுபவம்', albums: 'ஆல்பம்', teams: 'அணிகள்', available: 'கிடைக்கும்', github: 'GitHub' },
-    about: { main_text: 'மதிப்பு வழங்கல்.', agile_title: 'தலைமை', agile_desc: 'பயிற்சி.', dev_title: 'நிபுணத்துவம்', dev_desc: 'பொறியாளர்கள்.', soft_title: 'தொடர்பு மற்றும் உத்தி', soft_desc: 'பங்குதாரர் மேலாண்மை.' },
-    projects: { subtitle: 'செயலி மேம்பாடு', stack_label: 'தொழில்நுட்பம்:', descriptions: { armonix: "இசை கருவி.", palabra: "மேடை.", ensayemos: "இசைக்குழு நிர்வாகம்.", emaus: "நிர்வாக அமைப்பு.", melodialab: "ஸ்டுடியோ." } },
-    jobs: {
-      thomson: { company: "Thomson Reuters", role: "Python Developer", period: "2025", location: "சிலி", description: ["கட்டமைப்பு."], skills: ["Python"] },
-      onikom: { company: "Onikom", role: "Scrum Master", period: "2024", location: "மெக்சிகோ", description: ["தலைமை."], skills: ["Agile"] },
-      soho: { company: "SOHO", role: "Agile Coach", period: "2022-2023", location: "சிலி", description: ["மாற்றம்."], skills: ["Kanban"] },
-      cencosud: { company: "Cencosud", role: "Scrum Master", period: "2018-2021", location: "சிலி", description: ["நிதி."], skills: ["Agile"] }
-    },
-    music: { profile_label: 'படைப்பாற்றல்', main_desc: 'இசைக்கலைஞர்.', discography_title: 'இசைத்தொகுப்பு', discography_desc: '2 ஆல்பங்கள்.', production_title: 'தயாரிப்பு', production_desc: 'இசை.', listen_btn: 'Apple Music', studio_title: 'ஸ்டுடியோ' },
-    titles: { philosophy: 'சுயவிவரம்', projects: 'திட்டங்கள்', music: 'இசை', experience: 'அனுபவம்', contact: 'தொடர்பு' },
-    footer: { title: 'தொடர்பு', subtitle: 'திட்டத்திற்கு.', rights: 'உரிமைகள்.', made_by: 'உருவாக்கியவர்', tech_by: 'React & Tailwind மூலம்', copy_email: 'நகல்', copied: 'நகலெடுக்கப்பட்டது!', github: 'GitHub' }
-  },
-  gu: {
-    nav: { home: 'હોમ', philosophy: 'ફિલોસોફી', projects: 'પ્રોજેક્ટ્સ', music: 'સંગીત', experience: 'અનુભવ', contact_btn: 'સંપર્ક' },
-    hero: { role: 'Scrum Master', tagline_1: 'નેતૃત્વ', tagline_2: 'ટેક', tagline_3: 'પરિણામો.', synthesis: 'મેનેજમેન્ટ અને ટેક.', cta_portfolio: 'પોર્ટફોલિયો', cta_linkedin: 'LinkedIn', years_exp: 'અનુભવ', albums: 'આલ્બમ', teams: 'ટીમ', available: 'ઉપલબ્ધ', github: 'GitHub' },
-    about: { main_text: 'મૂલ્ય વિતરણ.', agile_title: 'નેતૃત્વ', agile_desc: 'કોચિંગ.', dev_title: 'નિપુણતા', dev_desc: 'એન્જિનિયર્સ.', soft_title: 'સંચાર અને વ્યૂહરચના', soft_desc: 'મેનેજમેન્ટ.' },
-    projects: { subtitle: 'વિકાસ', stack_label: 'સ્ટેક:', descriptions: { armonix: "સંગીત સાધન.", palabra: "પ્લેટફોર્મ.", ensayemos: "બેન્ડ.", emaus: "સિસ્ટમ.", melodialab: "સ્ટુડિયો." } },
-    jobs: {
-      thomson: { company: "Thomson Reuters", role: "Python Developer", period: "2025", location: "ચિલી", description: ["સ્ટ્રક્ચર."], skills: ["Python"] },
-      onikom: { company: "Onikom", role: "Scrum Master", period: "2024", location: "મેક્સિકો", description: ["લીડરશિપ."], skills: ["Agile"] },
-      soho: { company: "SOHO", role: "Agile Coach", period: "2022-2023", location: "ચિલી", description: ["ટ્રાન્સફોર્મેશન."], skills: ["Kanban"] },
-      cencosud: { company: "Cencosud", role: "Scrum Master", period: "2018-2021", location: "ચિલી", description: ["ફાઇનાન્સ."], skills: ["Agile"] }
-    },
-    music: { profile_label: 'સર્જનાત્મક', main_desc: 'સંગીતકાર.', discography_title: 'ડિસ્કોગ્રાફી', discography_desc: '2 આલ્બમ.', production_title: 'પ્રોડક્શન', production_desc: 'સંગીત.', listen_btn: 'Apple Music', studio_title: 'સ્ટુડિયો' },
-    titles: { philosophy: 'પ્રોફાઇલ', projects: 'પ્રોજેક્ટ્સ', music: 'સંગીત', experience: 'અનુભવ', contact: 'સંપર્ક' },
-    footer: { title: 'સંપર્ક', subtitle: 'પ્રોજેક્ટ.', rights: 'હકો.', made_by: 'દ્વારા', tech_by: 'React & Tailwind માં', copy_email: 'કોપી', copied: 'કોપી થયું!', github: 'GitHub' }
-  },
-  arn: {
-    nav: { home: 'Tuwün', philosophy: 'Rakiduam', projects: 'Kudaw', music: 'Ülkantun', experience: 'Kimün', contact_btn: 'Nütram' },
-    hero: { role: 'Scrum Master', tagline_1: 'Longko', tagline_2: 'Kimün', tagline_3: 'kudaw.', synthesis: 'Gvnenian ka kimün.', cta_portfolio: 'Kudaw', cta_linkedin: 'LinkedIn', years_exp: 'Tripantu', albums: 'Ülkantun', teams: 'Trowün', available: 'Mülelay', github: 'GitHub' },
-    about: { main_text: 'Kimün.', agile_title: 'Longko', agile_desc: 'Kimün.', dev_title: 'Dewmafe', dev_desc: 'We Kudaw.', soft_title: 'Nütram', soft_desc: 'Gvnenian.' },
-    projects: { subtitle: 'Dewman', stack_label: 'Kudaw:', descriptions: { armonix: "Ülkantun.", palabra: "Ngillatun.", ensayemos: "Ülkantufe.", emaus: "Gvnenian.", melodialab: "Dewman." } },
-    jobs: {
-      thomson: { company: "Thomson Reuters", role: "Dewmafe Python", period: "2025", location: "Chile", description: ["Dewman."], skills: ["Python"] },
-      onikom: { company: "Onikom", role: "Scrum Master", period: "2024", location: "Mexico", description: ["Gvnenian."], skills: ["Agile"] },
-      soho: { company: "SOHO", role: "Agile Coach", period: "2022-2023", location: "Chile", description: ["Kimeltu."], skills: ["Kanban"] },
-      cencosud: { company: "Cencosud", role: "Scrum Master", period: "2018-2021", location: "Chile", description: ["Kudaw."], skills: ["Agile"] }
-    },
-    music: { profile_label: 'Ülkantun', main_desc: 'Ülkantufe.', discography_title: 'Ülkantun', discography_desc: '2 Epew.', production_title: 'Dewman', production_desc: 'We Ülkantun.', listen_btn: 'Apple Music', studio_title: 'Wenu Kudaw' },
-    titles: { philosophy: 'Rakiduam', projects: 'Kudaw', music: 'Ülkantun', experience: 'Kimün', contact: 'Nütram' },
-    footer: { title: 'Nütram', subtitle: 'Kudaw.', rights: 'Kom zugu.', made_by: 'Dewmay', tech_by: 'React & Tailwind mew', copy_email: 'Copy', copied: 'Copied!', github: 'GitHub' }
+    footer: { title: 'تواصل', subtitle: 'لبدء مشروعك.', rights: 'جميع الحقوق محفوظة.', made_by: 'صنع بـ', tech_by: 'بواسطة React & Tailwind', copy_email: 'نسخ الإيميل', copied: 'تم النسخ!', github: 'GitHub' }
   }
 };
