@@ -1,4 +1,4 @@
-// Version 1.6
+// Version 1.7
 import { Project, NavItem, Translations } from './types';
 import { 
   Code, 
@@ -101,7 +101,7 @@ export const TRANSLATIONS: Translations = {
     about: {
       main_text: 'No vivo estas dos áreas como mundos separados: se potencian entre sí. Pienso como desarrollador, lidero como agilista y creo como músico.',
       agile_title: 'Liderazgo Ágil (7+ Años)', agile_desc: 'Facilitación experta, métricas, coaching de equipos y transformación digital. Certified Scrum Master.',
-      dev_title: 'Full Stack Dev', dev_desc: 'Especializado en apps modernas, responsivas y escalables con React 18, Tailwind y Python.',
+      dev_title: 'Full Stack Dev', dev_desc: 'Especializado en apps modernos, responsivas y escalables con React 18, Tailwind y Python.',
       creative_title: 'Creatividad & Música', creative_desc: 'Composición de atmósferas sonoras y diseño de experiencias digitales.'
     },
     projects: { 
