@@ -1,4 +1,4 @@
-// Version 1.6
+// Version 1.9
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';

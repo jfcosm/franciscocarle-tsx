@@ -1,6 +1,6 @@
-// Version 1.6
+// Version 1.9
 import React from 'react';
-import { ArrowRight, Code, Music } from 'lucide-react';
+import { ArrowRight, Code, Music, Github } from 'lucide-react';
 import { PROFILE, TRANSLATIONS } from '../constants';
 import { LanguageCode } from '../types';
 
@@ -56,6 +56,15 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
               className="px-8 py-3 rounded-full border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors backdrop-blur-sm"
             >
               {t.cta_linkedin}
+            </a>
+            <a 
+              href={PROFILE.github}
+              target="_blank"
+              rel="noreferrer" 
+              className="px-4 py-3 rounded-full border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors backdrop-blur-sm flex items-center gap-2"
+              title={t.github}
+            >
+               <Github className="w-5 h-5" />
             </a>
           </div>
 

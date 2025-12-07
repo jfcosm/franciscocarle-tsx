@@ -1,4 +1,4 @@
-// Version 1.7
+// Version 1.9
 import { ReactNode } from "react";
 
 export interface NavItem {
@@ -49,6 +49,7 @@ export interface Translations {
       albums: string;
       teams: string;
       available: string;
+      github: string;
     };
     about: {
       main_text: string;
@@ -56,8 +57,8 @@ export interface Translations {
       agile_desc: string;
       dev_title: string;
       dev_desc: string;
-      creative_title: string;
-      creative_desc: string;
+      soft_title: string;
+      soft_desc: string;
     };
     projects: {
       subtitle: string;
@@ -90,6 +91,7 @@ export interface Translations {
       tech_by: string;
       copy_email: string;
       copied: string;
+      github: string;
     }
   }
 }

@@ -1,6 +1,6 @@
-// Version 1.6
+// Version 1.9
 import React, { useState } from 'react';
-import { Mail, Linkedin, Phone, Heart, Copy, Check } from 'lucide-react';
+import { Mail, Linkedin, Phone, Heart, Copy, Check, Github } from 'lucide-react';
 import { PROFILE, TRANSLATIONS } from '../constants';
 import { LanguageCode } from '../types';
 
@@ -67,6 +67,21 @@ const Footer: React.FC<FooterProps> = ({ lang = 'es' }) => {
             <div className="text-left">
               <p className="text-xs text-slate-500 dark:text-slate-400">LinkedIn</p>
               <p className="text-slate-800 dark:text-slate-200 font-medium">/in/franciscocarle</p>
+            </div>
+          </a>
+
+          <a 
+            href={PROFILE.github}
+            target="_blank" 
+            rel="noreferrer"
+            className="flex items-center gap-3 px-6 py-4 bg-white/50 dark:bg-slate-800/50 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-slate-500 transition-colors group w-full md:w-auto shadow-sm backdrop-blur-sm"
+          >
+            <div className="p-2 bg-slate-100 dark:bg-slate-700 rounded-lg group-hover:bg-slate-500/20 transition-colors">
+              <Github className="w-6 h-6 text-slate-500 dark:text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-300" />
+            </div>
+            <div className="text-left">
+              <p className="text-xs text-slate-500 dark:text-slate-400">{content.github}</p>
+              <p className="text-slate-800 dark:text-slate-200 font-medium">/franciscocarle</p>
             </div>
           </a>
           

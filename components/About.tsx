@@ -1,7 +1,7 @@
-// Version 1.6
+// Version 1.9
 import React from 'react';
 import { SKILLS, TRANSLATIONS } from '../constants';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, Globe } from 'lucide-react';
 import { LanguageCode } from '../types';
 
 interface AboutProps {
@@ -62,19 +62,19 @@ const About: React.FC<AboutProps> = ({ lang }) => {
             </ul>
           </div>
 
-          {/* Creative Column */}
+          {/* Soft Skills Column (Replaces Creative) */}
           <div className="bg-white/40 dark:bg-slate-900/40 backdrop-blur-xl p-8 rounded-2xl border border-white/20 dark:border-white/10 hover:border-secondary-500/50 transition-colors shadow-sm">
             <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
               <span className="w-8 h-1 bg-secondary-500 rounded-full"></span>
-              {content.creative_title}
+              {content.soft_title}
             </h3>
             <p className="text-slate-600 dark:text-slate-400 mb-6 text-sm">
-              {content.creative_desc}
+              {content.soft_desc}
             </p>
             <ul className="space-y-3">
-              {SKILLS.creative.map(skill => (
+              {SKILLS.soft.map(skill => (
                 <li key={skill} className="flex items-center gap-2 text-slate-700 dark:text-slate-300 text-sm">
-                  <CheckCircle2 className="w-4 h-4 text-secondary-500" />
+                  <Globe className="w-4 h-4 text-secondary-500" />
                   {skill}
                 </li>
               ))}
