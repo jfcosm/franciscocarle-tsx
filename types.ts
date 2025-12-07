@@ -1,4 +1,4 @@
-// Version 1.5
+// Version 1.6
 import { ReactNode } from "react";
 
 export interface NavItem {
@@ -32,7 +32,7 @@ export interface SocialLink {
   icon: ReactNode;
 }
 
-export type LanguageCode = 'es' | 'en' | 'fr' | 'it' | 'ar' | 'de' | 'ja' | 'ko' | 'zh' | 'uk' | 'hi' | 'ta' | 'gu' | 'arn';
+export type LanguageCode = 'es' | 'en' | 'fr' | 'it' | 'ar' | 'de' | 'ja' | 'ko' | 'zh' | 'uk' | 'hi' | 'ta' | 'gu' | 'arn' | 'pt';
 
 export interface Translations {
   [key: string]: {

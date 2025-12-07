@@ -1,4 +1,4 @@
-// Version 1.5
+// Version 1.6
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [

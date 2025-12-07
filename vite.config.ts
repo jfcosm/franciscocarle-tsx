@@ -1,4 +1,4 @@
-// Version 1.5
+// Version 1.6
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 

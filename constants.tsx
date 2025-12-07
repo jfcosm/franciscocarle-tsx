@@ -1,4 +1,4 @@
-// Version 1.5
+// Version 1.6
 import { Project, NavItem, Translations } from './types';
 import { 
   Code, 
@@ -256,6 +256,61 @@ export const TRANSLATIONS: Translations = {
     },
     titles: { philosophy: 'Philosophie Hybride', projects: 'Vibe Coding', music: 'Son & Atmosphère', experience: 'Expérience Professionnelle', contact: 'Parlons' },
     footer: { title: 'Parlons', subtitle: 'Pour booster votre équipe agile ou développer votre plateforme.', rights: 'Tous droits réservés.', made_by: 'Fait avec', tech_by: 'en React & Tailwind par', copy_email: 'Copier Email', copied: 'Copié !' }
+  },
+  pt: {
+    nav: { home: 'Início', philosophy: 'Filosofia', projects: 'Projetos', music: 'Música', experience: 'Experiência', contact_btn: 'Contato' },
+    hero: { 
+      role: 'Senior Scrum Master (7+ Anos) | Agile Coach | Full Stack', 
+      tagline_1: 'Tecnologia', tagline_2: '+ Música', tagline_3: 'no mesmo nível.',
+      synthesis: 'Construo tecnologia e música com a mesma filosofia: clareza, emoção e propósito.', 
+      cta_portfolio: 'Ver Portfólio', cta_linkedin: 'LinkedIn', years_exp: 'Anos Exp Ágil', albums: 'Álbuns', teams: 'Equipes Lideradas', available: 'Disponível para projetos' 
+    },
+    about: {
+      main_text: 'Não vivo essas áreas como mundos separados: elas se potenciam. Penso como desenvolvedor, lidero como agilista e crio como músico.',
+      agile_title: 'Liderança Ágil (7+ Anos)', agile_desc: 'Facilitação, métricas, coaching de equipes e transformação digital. Certified Scrum Master.',
+      dev_title: 'Full Stack Dev', dev_desc: 'Especializado em apps modernos com React 18, Tailwind e Python.',
+      creative_title: 'Criatividade & Música', creative_desc: 'Composição de atmosferas sonoras e design de experiências digitais.'
+    },
+    projects: { 
+      subtitle: 'Desenvolvimento de Aplicações Modernas', stack_label: 'Stack Principal:',
+      descriptions: {
+        armonix: "Ferramenta educativa musical interativa com visualizador de acordes. Uma das apps musicais locais mais completas.",
+        palabra: "Plataforma litúrgica com leituras diárias e reflexões geradas por IA. Arquitetura moderna.",
+        ensayemos: "Gestão para bandas: votação de ensaios, setlists e repositório de acordes.",
+        emaus: "Sistema de gestão paroquial integral: sacramentos, finanças, mensagens e rede social interna.",
+        melodialab: "Meu estúdio de desenvolvimento e portfólio experimental. Design moderno."
+      }
+    },
+    jobs: {
+      thomson: {
+        company: "Thomson Reuters", role: "Desenvolvedor Python Full Stack", period: "Março 2025 – Presente", location: "Santiago, Chile / Remoto",
+        description: ["Arquitetura modular para automação de documentos.", "Robôs de scraping em Python com SQL Server.", "Trabalho ágil com CI/CD."],
+        skills: ["Python", "SQLAlchemy", "Git", "Scrum"]
+      },
+      onikom: {
+        company: "Onikom Latam", role: "Scrum Master Sênior", period: "Abril 2024 – Dezembro 2024", location: "México / Remoto",
+        description: ["Liderança de 6 equipes ágeis (IA/SaaS).", "Redução de spill-overs em 25% e melhoria na entrega.", "Padronização de métricas."],
+        skills: ["Agile Coaching", "Metrics", "Team Leadership"]
+      },
+      soho: {
+        company: "SOHO (Gasco)", role: "Agile Coach", period: "Abril 2022 – Dezembro 2023", location: "Santiago, Chile",
+        description: ["Transformação Ágil e treinamento em Scrum e Kanban.", "Workshops de Design Thinking (+25% inovação).", "Gestão visual."],
+        skills: ["Kanban", "Design Thinking", "Change Management"]
+      },
+      cencosud: {
+        company: "Cencosud Scotiabank", role: "Scrum Master", period: "Março 2018 – Março 2021", location: "Santiago, Chile",
+        description: ["Gestão de projetos tecnológicos em Risco e Finanças.", "Aumento da conclusão de sprints para 92%.", "Promoção da cultura ágil."],
+        skills: ["Finance Tech", "Agile Adoption", "Team Building"]
+      }
+    },
+    music: {
+      profile_label: 'Perfil Musical', main_desc: 'Minha música oscila entre o atmosférico, eletrônico e rock melódico.',
+      discography_title: 'Discografia', discography_desc: '2 Álbuns e 4 Singles publicados. Produzidos e mixados por mim.',
+      production_title: 'Produção', production_desc: 'Música original para documentários e TV.',
+      listen_btn: 'Ouvir na Apple Music', studio_title: 'Estúdio Virtual'
+    },
+    titles: { philosophy: 'Filosofia', projects: 'Vibe Coding', music: 'Som & Atmosfera', experience: 'Experiência', contact: 'Contato' },
+    footer: { title: 'Vamos Conversar', subtitle: 'Para impulsionar sua equipe ágil ou desenvolver sua plataforma.', rights: 'Todos os direitos reservados.', made_by: 'Feito com', tech_by: 'em React & Tailwind por', copy_email: 'Copiar Email', copied: 'Copiado!' }
   },
   it: {
     nav: { home: 'Home', philosophy: 'Filosofia', projects: 'Progetti', music: 'Musica', experience: 'Esperienza', contact_btn: 'Contattami' },

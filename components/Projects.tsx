@@ -1,4 +1,4 @@
-// Version 1.5
+// Version 1.6
 import React from 'react';
 import { PROJECTS, TRANSLATIONS } from '../constants';
 import { ExternalLink } from 'lucide-react';
