@@ -1,4 +1,4 @@
-// Version 1.9
+// Version 2.1
 import { Project, NavItem, Translations } from './types';
 import { 
   Code, 
@@ -120,13 +120,24 @@ export const TRANSLATIONS: Translations = {
     jobs: {
       thomson: {
         company: "Thomson Reuters", role: "Desarrollador Python Full Stack", period: "Marzo 2025 – Presente", location: "Santiago, Chile / Remoto",
-        description: ["Arquitectura modular para automatización y rastreo de documentos regulatorios.", "Desarrollo de robots de scraping en Python integrados con SQL Server.", "Trabajo ágil con CI/CD y revisiones iterativas."],
+        description: [
+          "Arquitectura modular para automatización y rastreo de documentos regulatorios.", 
+          "Desarrollo de robots de scraping en Python integrados con SQL Server.", 
+          "Trabajo ágil con CI/CD y revisiones iterativas.",
+          "Desarrollo de frontend basado en Laravel."
+        ],
         skills: ["Python", "SQLAlchemy", "BeautifulSoup", "Git", "Scrum"]
       },
       onikom: {
         company: "Onikom Latam", role: "Scrum Master Senior", period: "Abril 2024 – Diciembre 2024", location: "Mexico / Remoto",
-        description: ["Liderazgo de 6 equipos ágiles distribuidos desarrollando agentes IA y SaaS.", "Reducción de spill-overs en un 25% y mejora de entrega a tiempo en 30%.", "Estandarización de métricas ágiles y mentoría a Product Owners."],
-        skills: ["Agile Coaching", "Metrics", "Team Leadership", "AI Agents"]
+        description: [
+          "Liderazgo de +6 equipos ágiles distribuidos desarrollando agentes IA y SaaS.",
+          "Testing, gestión del proyecto y compilación en VSC de proyectos móviles para iOS y Android usando .NET MAUI.",
+          "Creación de backlog para proyectos de Grupo Inmobiliario Gigante, Ciudad de México.",
+          "Trato directo con stakeholders, managers y equipo técnico de las empresas cliente.",
+          "Gestión y revisión de propuestas tecnológicas para empresas públicas y privadas de E.E.U.U. a través de la plataforma Bidprime, con equipos localizados en India y México."
+        ],
+        skills: ["Agile Leadership", ".NET MAUI", "Bidprime", "Team Leadership", "AI Agents"]
       },
       soho: {
         company: "SOHO (Gasco)", role: "Agile Coach", period: "Abril 2022 – Diciembre 2023", location: "Santiago, Chile",
@@ -177,13 +188,24 @@ export const TRANSLATIONS: Translations = {
     jobs: {
       thomson: {
         company: "Thomson Reuters", role: "Full Stack Python Developer", period: "March 2025 – Present", location: "Santiago, Chile / Remote",
-        description: ["Modular architecture for automation and tracking of regulatory documents.", "Development of Python scraping robots integrated with SQL Server.", "Agile work with CI/CD and iterative reviews."],
+        description: [
+          "Modular architecture for automation and tracking of regulatory documents.", 
+          "Development of Python scraping robots integrated with SQL Server.", 
+          "Agile work with CI/CD and iterative reviews.",
+          "Frontend development based on Laravel."
+        ],
         skills: ["Python", "SQLAlchemy", "BeautifulSoup", "Git", "Scrum"]
       },
       onikom: {
         company: "Onikom Latam", role: "Senior Scrum Master", period: "April 2024 – December 2024", location: "Mexico / Remote",
-        description: ["Leadership of 6 distributed agile teams developing AI agents and SaaS.", "Reduced spill-overs by 25% and improved on-time delivery by 30%.", "Standardization of agile metrics and mentorship for Product Owners."],
-        skills: ["Agile Coaching", "Metrics", "Team Leadership", "AI Agents"]
+        description: [
+          "Leadership of +6 distributed agile teams developing AI agents and SaaS.",
+          "Testing, project management, and compilation in VSC of mobile projects for iOS and Android using .NET MAUI.",
+          "Backlog creation for Grupo Inmobiliario Gigante projects, Mexico City.",
+          "Direct management of stakeholders, managers, and technical teams of client companies.",
+          "Management and review of technological proposals for US public and private companies via Bidprime, with teams located in India and Mexico."
+        ],
+        skills: ["Agile Leadership", ".NET MAUI", "Bidprime", "Team Leadership", "AI Agents"]
       },
       soho: {
         company: "SOHO (Gasco)", role: "Agile Coach", period: "April 2022 – December 2023", location: "Santiago, Chile",
@@ -218,7 +240,7 @@ export const TRANSLATIONS: Translations = {
     about: {
       main_text: 'Mon profil technique me permet de comprendre le code, tandis que mon leadership assure la livraison. La musique m\'apporte l\'écoute active.',
       agile_title: 'Leadership Agile (7+ Ans)', agile_desc: 'Facilitation experte, métriques, coaching d\'équipe. Certified Scrum Master.',
-      dev_title: 'Expertise Technique', dev_desc: 'Capable de dialoguer avec les ingénieurs et de développer en React 18 et Python.',
+      dev_title: 'Expertise Technique', dev_desc: 'Capable de dialogar avec les ingénieurs et de développer en React 18 et Python.',
       soft_title: 'Communication & Stratégie', soft_desc: 'Capacité à gérer les parties prenantes et à diriger des équipes multiculturelles (Anglais C2).'
     },
     projects: { 
@@ -256,7 +278,7 @@ export const TRANSLATIONS: Translations = {
     music: {
       profile_label: 'Côté Créatif', main_desc: 'En plus de ma carrière technique, je suis musicien et producteur.',
       discography_title: 'Discographie', discography_desc: '2 Albums et 4 Singles publiés. Produits et mixés par moi-même.',
-      production_title: 'Production', production_desc: 'Musique originale pour documentaires et TV.',
+      production_title: 'Produção', production_desc: 'Musique originale pour documentaires et TV.',
       listen_btn: 'Écouter sur Apple Music', studio_title: 'Studio Virtuel'
     },
     titles: { philosophy: 'Profil Pro', projects: 'Portfolio Tech', music: 'Production Musicale', experience: 'Expérience Professionnelle', contact: 'Parlons' },
