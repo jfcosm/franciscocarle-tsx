@@ -29,7 +29,8 @@ export const PROFILE = {
   linkedin: "https://www.linkedin.com/in/franciscocarle/",
   github: "https://github.com/franciscocarle",
   appleMusic: "https://music.apple.com/cl/artist/francisco-carle/1662050530",
-  image: "/perfil.jpg", 
+  image: "/perfil.jpg",
+  googleAnalyticsId: "G-36VY3R5GTR", // Reemplaza con tu ID de medición (ej: G-1234567890)
 };
 
 // Projects Data
@@ -248,7 +249,7 @@ export const TRANSLATIONS: Translations = {
       },
       cencosud: {
         company: "Cencosud Scotiabank", role: "Scrum Master / Partenaire Affaires", period: "Mars 2018 – Mars 2021", location: "Santiago, Chili",
-        description: ["Gestion de projets technologiques Risque/Finance.", "Augmentation de la complétion des sprints de 70% à 92%.", "Promotion de la culture agile."],
+        description: ["Gestion de projetos technologiques Risque/Finance.", "Augmentation de la complétion des sprints de 70% à 92%.", "Promotion de la culture agile."],
         skills: ["Finance Tech", "Agile Adoption", "Team Building"]
       }
     },
