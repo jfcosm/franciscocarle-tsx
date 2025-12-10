@@ -1,4 +1,4 @@
-// Version 2.1
+// Version 2.2
 import { Project, NavItem, Translations } from './types';
 import { 
   Code, 
@@ -256,12 +256,18 @@ export const TRANSLATIONS: Translations = {
     jobs: {
       thomson: {
         company: "Thomson Reuters", role: "Développeur Python Full Stack", period: "Mars 2025 – Présent", location: "Santiago, Chili / Télétravail",
-        description: ["Architecture modulaire pour l'automatisation de documents réglementaires.", "Robots de scraping Python intégrés avec SQL Server.", "Travail agile CI/CD."],
+        description: ["Architecture modulaire pour l'automatisation de documents réglementaires.", "Robots de scraping Python intégrés avec SQL Server.", "Travail agile CI/CD.", "Développement frontend basé sur Laravel."],
         skills: ["Python", "SQLAlchemy", "Git", "Scrum"]
       },
       onikom: {
         company: "Onikom Latam", role: "Scrum Master Senior", period: "Avril 2024 – Décembre 2024", location: "Mexique / Télétravail",
-        description: ["Leadership de 6 équipes agiles distribuées (IA/SaaS).", "Réduction des débordements de 25% et amélioration des délais.", "Standardisation des métriques."],
+        description: [
+          "Leadership de +6 équipes agiles distribuées développant des agents IA et SaaS.",
+          "Tests, gestion de projet et compilation sur VSC de projets mobiles pour iOS et Android utilisant .NET MAUI.",
+          "Création de backlog pour les projets de Grupo Inmobiliario Gigante, Mexico.",
+          "Gestion directe des parties prenantes, managers et équipes techniques des clients.",
+          "Gestion et révision des propositions technologiques pour les entreprises américaines via Bidprime."
+        ],
         skills: ["Agile Coaching", "Metrics", "Team Leadership"]
       },
       soho: {
@@ -312,12 +318,18 @@ export const TRANSLATIONS: Translations = {
     jobs: {
       thomson: {
         company: "Thomson Reuters", role: "Desenvolvedor Python Full Stack", period: "Março 2025 – Presente", location: "Santiago, Chile / Remoto",
-        description: ["Arquitetura modular para automação de documentos.", "Robôs de scraping em Python com SQL Server.", "Trabalho ágil com CI/CD."],
+        description: ["Arquitetura modular para automação de documentos.", "Robôs de scraping em Python com SQL Server.", "Trabalho ágil com CI/CD.", "Desenvolvimento frontend baseado em Laravel."],
         skills: ["Python", "SQLAlchemy", "Git", "Scrum"]
       },
       onikom: {
         company: "Onikom Latam", role: "Scrum Master Sênior", period: "Abril 2024 – Dezembro 2024", location: "México / Remoto",
-        description: ["Liderança de 6 equipes ágeis (IA/SaaS).", "Redução de spill-overs em 25% e melhoria na entrega.", "Padronização de métricas."],
+        description: [
+          "Liderança de +6 equipes ágeis distribuídas desenvolvendo agentes de IA e SaaS.",
+          "Testes, gestão de projetos e compilação em VSC de projetos móveis para iOS e Android usando .NET MAUI.",
+          "Criação de backlog para projetos do Grupo Inmobiliario Gigante, Cidade do México.",
+          "Gestão direta de stakeholders, gerentes e equipes técnicas das empresas clientes.",
+          "Gestão e revisão de propostas tecnológicas para empresas públicas e privadas dos EUA via Bidprime."
+        ],
         skills: ["Agile Coaching", "Metrics", "Team Leadership"]
       },
       soho: {
@@ -346,8 +358,8 @@ export const TRANSLATIONS: Translations = {
     about: { main_text: 'Il mio profilo tecnico aiuta a capire il codice, la leadership assicura la consegna.', agile_title: 'Leadership Agile', agile_desc: 'Facilitazione esperta, metriche e coaching.', dev_title: 'Expertise Tecnica', dev_desc: 'Capacità di dialogo con ingegneri.', soft_title: 'Comunicazione e Strategia', soft_desc: 'Gestione stakeholder e team multiculturali.' },
     projects: { subtitle: 'Sviluppo Applicazioni Moderne', stack_label: 'Stack:', descriptions: { armonix: "Strumento educativo musicale interattivo.", palabra: "Piattaforma liturgica con riflessioni IA.", ensayemos: "Gestione per band musicali.", emaus: "Sistema di gestione parrocchiale integrale.", melodialab: "Il mio studio di sviluppo." } },
     jobs: {
-      thomson: { company: "Thomson Reuters", role: "Sviluppatore Python Full Stack", period: "Mar 2025 – Presente", location: "Cile / Remoto", description: ["Architettura modulare per automazione.", "Scraping robot Python.", "Lavoro agile CI/CD."], skills: ["Python", "Scrum"] },
-      onikom: { company: "Onikom Latam", role: "Scrum Master Senior", period: "Apr 2024 – Dic 2024", location: "Messico / Remoto", description: ["Leadership di 6 team agili.", "Miglioramento consegna del 30%.", "Metriche agili."], skills: ["Agile Coaching", "Leadership"] },
+      thomson: { company: "Thomson Reuters", role: "Sviluppatore Python Full Stack", period: "Mar 2025 – Presente", location: "Cile / Remoto", description: ["Architettura modulare per automazione.", "Scraping robot Python.", "Lavoro agile CI/CD.", "Sviluppo frontend basato su Laravel."], skills: ["Python", "Scrum"] },
+      onikom: { company: "Onikom Latam", role: "Scrum Master Senior", period: "Apr 2024 – Dic 2024", location: "Messico / Remoto", description: ["Leadership di 6+ team agili distribuiti.", "Testing e compilazione app mobili .NET MAUI.", "Gestione stakeholder e proposte tecnologiche per USA."], skills: ["Agile Coaching", "Leadership"] },
       soho: { company: "SOHO (Gasco)", role: "Agile Coach", period: "Apr 2022 – Dic 2023", location: "Santiago, Cile", description: ["Trasformazione Agile.", "Workshop Design Thinking.", "Gestione visiva."], skills: ["Kanban", "Design Thinking"] },
       cencosud: { company: "Cencosud Scotiabank", role: "Scrum Master", period: "Mar 2018 – Mar 2021", location: "Santiago, Cile", description: ["Progetti Tech Finanza.", "Miglioramento sprint al 92%.", "Cultura agile."], skills: ["Finance Tech", "Agile"] }
     },
@@ -361,8 +373,8 @@ export const TRANSLATIONS: Translations = {
     about: { main_text: 'Mein technisches Profil hilft, Code zu verstehen, Führung sichert die Lieferung.', agile_title: 'Agile Führung', agile_desc: 'Experten-Facilitation, Metriken.', dev_title: 'Technische Expertise', dev_desc: 'Dialog mit Ingenieuren.', soft_title: 'Kommunikation & Strategie', soft_desc: 'Stakeholder-Management und multikulturelle Führung.' },
     projects: { subtitle: 'Moderne App-Entwicklung', stack_label: 'Stack:', descriptions: { armonix: "Interaktives Musik-Lern-Tool.", palabra: "Liturgische Plattform mit KI.", ensayemos: "Management für Bands.", emaus: "Pfarrverwaltungssystem.", melodialab: "Mein Entwicklungsstudio." } },
     jobs: {
-      thomson: { company: "Thomson Reuters", role: "Python Full Stack Entwickler", period: "Mär 2025 – Heute", location: "Chile / Remote", description: ["Modulare Architektur.", "Python Scraping Bots.", "Agiles Arbeiten."], skills: ["Python", "Scrum"] },
-      onikom: { company: "Onikom Latam", role: "Senior Scrum Master", period: "Apr 2024 – Dez 2024", location: "Mexiko / Remote", description: ["Führung von 6 Teams.", "30% bessere Lieferzeit.", "Agile Metriken."], skills: ["Agile Coaching", "Leadership"] },
+      thomson: { company: "Thomson Reuters", role: "Python Full Stack Entwickler", period: "Mär 2025 – Heute", location: "Chile / Remote", description: ["Modulare Architektur.", "Python Scraping Bots.", "Agiles Arbeiten.", "Frontend-Entwicklung basierend auf Laravel."], skills: ["Python", "Scrum"] },
+      onikom: { company: "Onikom Latam", role: "Senior Scrum Master", period: "Apr 2024 – Dez 2024", location: "Mexiko / Remote", description: ["Führung von 6+ verteilten agilen Teams.", "Testing von .NET MAUI Apps.", "Stakeholder-Management und technische Angebote für USA."], skills: ["Agile Coaching", "Leadership"] },
       soho: { company: "SOHO (Gasco)", role: "Agile Coach", period: "Apr 2022 – Dez 2023", location: "Santiago, Chile", description: ["Agile Transformation.", "Design Thinking Workshops.", "Visuelles Management."], skills: ["Kanban", "Design Thinking"] },
       cencosud: { company: "Cencosud Scotiabank", role: "Scrum Master", period: "Mär 2018 – Mär 2021", location: "Santiago, Chile", description: ["Finanz-Tech Projekte.", "Sprint-Abschluss 92%.", "Agile Kultur."], skills: ["Finance Tech", "Agile"] }
     },
@@ -376,8 +388,8 @@ export const TRANSLATIONS: Translations = {
     about: { main_text: '開発者としての視点とリーダーシップで、プロジェクトを成功に導きます。', agile_title: 'アジャイルリーダーシップ', agile_desc: 'ファシリテーション、コーチング。', dev_title: '技術的専門知識', dev_desc: 'エンジニアとの対話能力。', soft_title: 'コミュニケーションと戦略', soft_desc: 'ステークホルダー管理と多文化チームの指導。' },
     projects: { subtitle: 'アプリ開発', stack_label: 'スタック:', descriptions: { armonix: "インタラクティブな音楽教育ツール。", palabra: "AI生成による典礼プラットフォーム。", ensayemos: "バンド管理ツール。", emaus: "包括的な教区管理システム。", melodialab: "私の開発スタジオ。" } },
     jobs: {
-      thomson: { company: "Thomson Reuters", role: "Pythonフルスタック開発者", period: "2025年3月 – 現在", location: "チリ / リモート", description: ["自動化のためのモジュラーアーキテクチャ。", "Pythonスクレイピングボット。", "アジャイル開発。"], skills: ["Python", "Scrum"] },
-      onikom: { company: "Onikom Latam", role: "シニアスクラムマスター", period: "2024年4月 – 12月", location: "メキシコ / リモート", description: ["6つのアジャイルチームを指導。", "納期遵守率30%向上。", "メトリクスの標準化。"], skills: ["Agile Coaching", "Leadership"] },
+      thomson: { company: "Thomson Reuters", role: "Pythonフルスタック開発者", period: "2025年3月 – 現在", location: "チリ / リモート", description: ["自動化のためのモジュラーアーキテクチャ。", "Pythonスクレイピングボット。", "アジャイル開発。", "Laravelベースのフロントエンド開発。"], skills: ["Python", "Scrum"] },
+      onikom: { company: "Onikom Latam", role: "シニアスクラムマスター", period: "2024年4月 – 12月", location: "メキシコ / リモート", description: ["6+のアジャイルチームを指導。", ".NET MAUIアプリのテストと管理。", "米国向け技術提案の管理。"], skills: ["Agile Coaching", "Leadership"] },
       soho: { company: "SOHO (Gasco)", role: "アジャイルコーチ", period: "2022年4月 – 2023年12月", location: "サンティアゴ", description: ["アジャイル変革の指導。", "デザイン思考ワークショップ。", "可視化管理。"], skills: ["Kanban", "Design Thinking"] },
       cencosud: { company: "Cencosud Scotiabank", role: "スクラムマスター", period: "2018年3月 – 2021年3月", location: "サンティアゴ", description: ["金融テックプロジェクト。", "スプリント完了率92%。", "アジャイル文化の推進。"], skills: ["Finance Tech", "Agile"] }
     },
@@ -391,8 +403,8 @@ export const TRANSLATIONS: Translations = {
     about: { main_text: '기술적 배경과 리더십으로 가치를 전달합니다.', agile_title: '애자일 리더십', agile_desc: '코칭 및 퍼실리테이션.', dev_title: '기술 전문성', dev_desc: '엔지니어와의 소통.', soft_title: '커뮤니케이션 및 전략', soft_desc: '이해관계자 관리 및 다문화 팀 리더십.' },
     projects: { subtitle: '앱 개발', stack_label: '스택:', descriptions: { armonix: "음악 교육 도구.", palabra: "전례 플랫폼.", ensayemos: "밴드 관리.", emaus: "교구 관리 시스템.", melodialab: "개발 스튜디오." } },
     jobs: {
-      thomson: { company: "Thomson Reuters", role: "Python 풀스택 개발자", period: "2025.03 – 현재", location: "칠레", description: ["모듈식 아키텍처.", "스크래핑 봇."], skills: ["Python", "Scrum"] },
-      onikom: { company: "Onikom Latam", role: "시니어 스크럼 마스터", period: "2024.04 – 12", location: "멕시코", description: ["6개 팀 리딩.", "납기 준수 향상."], skills: ["Agile", "Leadership"] },
+      thomson: { company: "Thomson Reuters", role: "Python 풀스택 개발자", period: "2025.03 – 현재", location: "칠레", description: ["모듈식 아키텍처.", "스크래핑 봇.", "Laravel 기반 프론트엔드 개발."], skills: ["Python", "Scrum"] },
+      onikom: { company: "Onikom Latam", role: "시니어 스크럼 마스터", period: "2024.04 – 12", location: "멕시코", description: ["6+ 분산 팀 리딩.", ".NET MAUI 앱 테스트 및 관리.", "미국 기업 기술 제안 관리."], skills: ["Agile", "Leadership"] },
       soho: { company: "SOHO", role: "애자일 코치", period: "2022.04 – 2023.12", location: "칠레", description: ["애자일 전환.", "디자인 씽킹."], skills: ["Kanban", "Design Thinking"] },
       cencosud: { company: "Cencosud", role: "스크럼 마스터", period: "2018.03 – 2021.03", location: "칠레", description: ["핀테크 프로젝트.", "문화 확산."], skills: ["Agile"] }
     },
@@ -406,8 +418,8 @@ export const TRANSLATIONS: Translations = {
     about: { main_text: '利用技术背景和领导力交付价值。', agile_title: '敏捷领导力', agile_desc: '团队辅导。', dev_title: '技术专长', dev_desc: '与工程师沟通。', soft_title: '沟通与策略', soft_desc: '利益相关者管理和多文化团队领导。' },
     projects: { subtitle: '应用开发', stack_label: '技术栈:', descriptions: { armonix: "音乐教育工具。", palabra: "礼仪平台。", ensayemos: "乐队管理。", emaus: "教区管理系统。", melodialab: "开发工作室。" } },
     jobs: {
-      thomson: { company: "Thomson Reuters", role: "Python 全栈开发", period: "2025.03 – 至今", location: "智利", description: ["模块化架构。", "爬虫机器人。"], skills: ["Python"] },
-      onikom: { company: "Onikom Latam", role: "高级 Scrum Master", period: "2024.04 – 12", location: "墨西哥", description: ["领导6个团队。", "提升交付效率。"], skills: ["Agile"] },
+      thomson: { company: "Thomson Reuters", role: "Python 全栈开发", period: "2025.03 – 至今", location: "智利", description: ["模块化架构。", "爬虫机器人。", "基于 Laravel 的前端开发。"], skills: ["Python"] },
+      onikom: { company: "Onikom Latam", role: "高级 Scrum Master", period: "2024.04 – 12", location: "墨西哥", description: ["领导6+个分布式团队。", ".NET MAUI 应用测试与管理。", "管理针对美国企业的技术提案。"], skills: ["Agile"] },
       soho: { company: "SOHO", role: "敏捷教练", period: "2022.04 – 2023.12", location: "智利", description: ["敏捷转型。", "设计思维。"], skills: ["Kanban"] },
       cencosud: { company: "Cencosud", role: "Scrum Master", period: "2018.03 – 2021.03", location: "智利", description: ["金融科技项目。", "推广敏捷文化。"], skills: ["Agile"] }
     },
@@ -421,13 +433,83 @@ export const TRANSLATIONS: Translations = {
     about: { main_text: 'استخدام الخلفية التقنية والقيادة لتقديم القيمة.', agile_title: 'قيادة أجايل', agile_desc: 'تدريب الفرق.', dev_title: 'خبرة تقنية', dev_desc: 'التواصل مع المهندسين.', soft_title: 'الاتصال والاستراتيجية', soft_desc: 'إدارة أصحاب المصلحة والقيادة متعددة الثقافات.' },
     projects: { subtitle: 'تطوير تطبيقات', stack_label: 'التقنيات:', descriptions: { armonix: "أداة تعليمية موسيقية.", palabra: "منصة دينية.", ensayemos: "إدارة الفرق الموسيقية.", emaus: "نظام إدارة.", melodialab: "استوديو التطوير." } },
     jobs: {
-      thomson: { company: "Thomson Reuters", role: "مطور بايثون", period: "مارس 2025 - الآن", location: "تشيلي", description: ["هيكلية معيارية.", "روبوتات."], skills: ["Python"] },
-      onikom: { company: "Onikom Latam", role: "سكروم ماستر", period: "أبريل 2024 - ديسمبر 2024", location: "المكسيك", description: ["قيادة 6 فرق.", "تحسين التسليم."], skills: ["Agile"] },
+      thomson: { company: "Thomson Reuters", role: "مطور بايثون", period: "مارس 2025 - الآن", location: "تشيلي", description: ["هيكلية معيارية.", "روبوتات.", "تطوير الواجهة الأمامية باستخدام Laravel."], skills: ["Python"] },
+      onikom: { company: "Onikom Latam", role: "سكروم ماستر", period: "أبريل 2024 - ديسمبر 2024", location: "المكسيك", description: ["قيادة 6+ فرق.", ".NET MAUI اختبار وإدارة.", "إدارة المقترحات التقنية."], skills: ["Agile"] },
       soho: { company: "SOHO", role: "مدرب أجايل", period: "2022 - 2023", location: "تشيلي", description: ["تحول أجايل.", "تفكير تصميمي."], skills: ["Kanban"] },
       cencosud: { company: "Cencosud", role: "سكروم ماستر", period: "2018 - 2021", location: "تشيلي", description: ["مشاريع مالية.", "ثقافة أجايل."], skills: ["Agile"] }
     },
     music: { profile_label: 'إبداع', main_desc: 'موسيقي ومنتج.', discography_title: 'أعمال', discography_desc: 'ألبومان.', production_title: 'إنتاج', production_desc: 'موسيقى أصلية.', listen_btn: 'Apple Music', studio_title: 'استوديو' },
     titles: { philosophy: 'الملف', projects: 'مشاريع', music: 'موسيقى', experience: 'خبرة', contact: 'تواصل' },
     footer: { title: 'تواصل', subtitle: 'لبدء مشروعك.', rights: 'جميع الحقوق محفوظة.', made_by: 'صنع بـ', tech_by: 'بواسطة React & Tailwind', copy_email: 'نسخ الإيميل', copied: 'تم النسخ!', github: 'GitHub' }
+  },
+  hi: {
+    nav: { home: 'होम', philosophy: 'दर्शन', projects: 'परियोजनाएं', music: 'संगीत', experience: 'अनुभव', contact_btn: 'संपर्क करें' },
+    hero: {
+      role: 'वरिष्ठ स्क्रम मास्टर (7+ वर्ष) | एजाइल कोच | फुल स्टैक',
+      tagline_1: 'एजाइल नेतृत्व', tagline_2: '+ तकनीकी दृष्टि', tagline_3: 'वास्तविक परिणामों के लिए।',
+      synthesis: 'मैं एजाइल प्रबंधन और तकनीकी विशेषज्ञता को मिलाकर तकनीकी टीमों में मूल्य वितरण को सुविधाजनक बनाता हूं।',
+      cta_portfolio: 'पोर्टफोलियो देखें', cta_linkedin: 'लिंक्डइन', years_exp: 'वर्ष अनुभव', albums: 'एल्बम', teams: 'टीमें', available: 'उपलब्ध',
+      github: 'GitHub'
+    },
+    about: {
+      main_text: 'मेरी तकनीकी पृष्ठभूमि मुझे कोड की चुनौतियों को समझने में मदद करती है, जबकि मेरा नेतृत्व कौशल डिलीवरी सुनिश्चित करता है। संगीत मुझे सुनने की संवेदनशीलता देता है।',
+      agile_title: 'एजाइल नेतृत्व', agile_desc: 'विशेषज्ञ सुविधा, मेट्रिक्स और टीम कोचिंग।',
+      dev_title: 'तकनीकी विशेषज्ञता', dev_desc: 'इंजीनियरों के साथ संवाद करने की क्षमता।',
+      soft_title: 'संचार और रणनीति', soft_desc: 'हितधारकों का प्रबंधन और बहुसांस्कृतिक टीमों का नेतृत्व।'
+    },
+    projects: {
+      subtitle: 'आधुनिक ऐप विकास', stack_label: 'स्टैक:',
+      descriptions: {
+        armonix: "इंटरैक्टिव संगीत शैक्षिक उपकरण।",
+        palabra: "दैनिक पाठ और एआई प्रतिबिंबों के साथ मंच।",
+        ensayemos: "बैंड प्रबंधन उपकरण।",
+        emaus: "व्यापक पैरिश प्रबंधन प्रणाली।",
+        melodialab: "मेरा विकास स्टूडियो।"
+      }
+    },
+    jobs: {
+      thomson: { company: "Thomson Reuters", role: "पायथन फुल स्टैक डेवलपर", period: "मार्च 2025 – वर्तमान", location: "चिली / रिमोट", description: ["दस्तावेजों के लिए मॉड्यूलर वास्तुकला।", "SQL सर्वर के साथ पायथन रोबोट।", "CI/CD के साथ एजाइल कार्य।", "Laravel पर आधारित फ्रंटएंड विकास।"], skills: ["Python", "Scrum"] },
+      onikom: { company: "Onikom Latam", role: "वरिष्ठ स्क्रम मास्टर", period: "अप्रैल 2024 – दिसंबर 2024", location: "मेक्सिको / रिमोट", description: ["6 वितरित एजाइल टीमों का नेतृत्व।", ".NET MAUI मोबाइल परियोजनाओं का प्रबंधन।", "Bidprime के माध्यम से प्रस्तावों का प्रबंधन।"], skills: ["Agile Coaching", "Leadership"] },
+      soho: { company: "SOHO (Gasco)", role: "एजाइल कोच", period: "अप्रैल 2022 – दिसंबर 2023", location: "सैंटियागो, चिली", description: ["एजाइल परिवर्तन।", "डिजाइन थिंकिंग कार्यशालाएं।", "दृश्य प्रबंधन।"], skills: ["Kanban", "Design Thinking"] },
+      cencosud: { company: "Cencosud Scotiabank", role: "स्क्रम मास्टर", period: "मार्च 2018 – मार्च 2021", location: "सैंटियागो, चिली", description: ["वित्त तकनीकी परियोजनाएं।", "स्प्रिंट पूर्णता 92%।", "एजाइल संस्कृति।"], skills: ["Finance Tech", "Agile"] }
+    },
+    music: { profile_label: 'रचनात्मक', main_desc: 'संगीतकार और निर्माता।', discography_title: 'डिस्कोग्राफी', discography_desc: '2 एल्बम और 4 एकल।', production_title: 'उत्पादन', production_desc: 'टीवी के लिए मूल संगीत।', listen_btn: 'Apple Music', studio_title: 'स्टूडियो' },
+    titles: { philosophy: 'प्रोफ़ाइल', projects: 'परियोजनाएं', music: 'संगीत', experience: 'अनुभव', contact: 'संपर्क' },
+    footer: { title: 'संपर्क', subtitle: 'अगली परियोजना के लिए।', rights: 'सर्वाधिकार सुरक्षित।', made_by: 'के साथ बनाया गया', tech_by: 'React & Tailwind में', copy_email: 'ईमेल कॉपी करें', copied: 'कॉपी किया गया!', github: 'GitHub' }
+  },
+  gu: {
+    nav: { home: 'હોમ', philosophy: 'ફિલોસોફી', projects: 'પ્રોજેક્ટ્સ', music: 'સંગીત', experience: 'અનુભવ', contact_btn: 'સંપર્ક' },
+    hero: {
+      role: 'સિનિયર સ્ક્રમ માસ્ટર (7+ વર્ષ) | એજાઇલ કોચ',
+      tagline_1: 'એજાઇલ નેતૃત્વ', tagline_2: '+ તકનીકી દ્રષ્ટિ', tagline_3: 'પરિણામો માટે.',
+      synthesis: 'હું એજાઇલ મેનેજમેન્ટ અને તકનીકી કુશળતાને જોડીને મૂલ્ય વિતરણની સુવિધા આપું છું.',
+      cta_portfolio: 'પોર્ટફોલિયો', cta_linkedin: 'LinkedIn', years_exp: 'વર્ષ અનુભવ', albums: 'આલ્બમ્સ', teams: 'ટીમો', available: 'ઉપલબ્ધ',
+      github: 'GitHub'
+    },
+    about: {
+      main_text: 'મારી તકનીકી પૃષ્ઠભૂમિ કોડ સમજવામાં મદદ કરે છે, નેતૃત્વ ડિલિવરીની ખાતરી આપે છે.',
+      agile_title: 'એજાઇલ નેતૃત્વ', agile_desc: 'નિષ્ણાત સુવિધા અને કોચિંગ.',
+      dev_title: 'તકનીકી કુશળતા', dev_desc: 'ઇજનેરો સાથે વાતચીત.',
+      soft_title: 'સંચાર', soft_desc: 'સ્ટેકહોલ્ડર મેનેજમેન્ટ.'
+    },
+    projects: {
+      subtitle: 'એપ વિકાસ', stack_label: 'સ્ટેક:',
+      descriptions: {
+        armonix: "સંગીત શૈક્ષણિક સાધન.",
+        palabra: "AI પ્રતિબિંબ સાથે પ્લેટફોર્મ.",
+        ensayemos: "બેન્ડ મેનેજમેન્ટ.",
+        emaus: "પેરિશ મેનેજમેન્ટ સિસ્ટમ.",
+        melodialab: "વિકાસ સ્ટુડિયો."
+      }
+    },
+    jobs: {
+      thomson: { company: "Thomson Reuters", role: "પાયથોન ફૂલ સ્ટેક ડેવલપર", period: "માર્ચ 2025 – હાલમાં", location: "ચિલી / રિમોટ", description: ["મોડ્યુલર આર્કિટેક્ચર.", "પાયથોન સ્ક્રેપિંગ રોબોટ્સ.", "CI/CD સાથે એજાઇલ.", "Laravel આધારિત ફ્રન્ટએન્ડ."], skills: ["Python", "Scrum"] },
+      onikom: { company: "Onikom Latam", role: "સિનિયર સ્ક્રમ માસ્ટર", period: "એપ્રિલ 2024 – ડિસેમ્બર 2024", location: "મેક્સિકો", description: ["6+ ટીમોનું નેતૃત્વ.", ".NET MAUI પ્રોજેક્ટ મેનેજમેન્ટ.", "US કંપનીઓ માટે દરખાસ્તો."], skills: ["Agile", "Leadership"] },
+      soho: { company: "SOHO", role: "એજાઇલ કોચ", period: "2022 – 2023", location: "ચિલી", description: ["એજાઇલ પરિવર્તન.", "ડિઝાઇન થિંકિંગ."], skills: ["Kanban"] },
+      cencosud: { company: "Cencosud", role: "સ્ક્રમ માસ્ટર", period: "2018 – 2021", location: "ચિલી", description: ["ફાઇનાન્સ પ્રોજેક્ટ્સ.", "એજાઇલ સંસ્કૃતિ."], skills: ["Agile"] }
+    },
+    music: { profile_label: 'સર્જનાત્મક', main_desc: 'સંગીતકાર અને નિર્માતા.', discography_title: 'ડિસ્કોગ્રાફી', discography_desc: '2 આલ્બમ્સ.', production_title: 'ઉત્પાદન', production_desc: 'ટીવી સંગીત.', listen_btn: 'Apple Music', studio_title: 'સ્ટુડિયો' },
+    titles: { philosophy: 'પ્રોફાઇલ', projects: 'પ્રોજેક્ટ્સ', music: 'સંગીત', experience: 'અનુભવ', contact: 'સંપર્ક' },
+    footer: { title: 'સંપર્ક', subtitle: 'પ્રોજેક્ટ માટે.', rights: 'સર્વાધિકાર સુરક્ષિત.', made_by: 'દ્વારા બનાવેલ', tech_by: 'React & Tailwind માં', copy_email: 'ઇમેઇલ કોપી કરો', copied: 'કોપી થયું!', github: 'GitHub' }
   }
 };
