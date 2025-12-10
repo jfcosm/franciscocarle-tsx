@@ -1,4 +1,4 @@
-// Version 1.9
+// Version 2.0
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -8,7 +8,6 @@ import MusicSection from './components/Music';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 import Background from './components/Background';
-import GoogleAnalytics from './components/GoogleAnalytics';
 import { PROFILE } from './constants';
 import { LanguageCode } from './types';
 
@@ -33,7 +32,6 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen text-slate-900 dark:text-slate-200 selection:bg-primary-500/30 selection:text-white relative">
       <Background />
-      <GoogleAnalytics gaId={PROFILE.googleAnalyticsId} />
       
       <Header 
         isDark={isDark} 
