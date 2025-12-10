@@ -1,4 +1,4 @@
-// Version 2.0
+// Version 2.1
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -8,7 +8,6 @@ import MusicSection from './components/Music';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 import Background from './components/Background';
-import { PROFILE } from './constants';
 import { LanguageCode } from './types';
 
 const App: React.FC = () => {
