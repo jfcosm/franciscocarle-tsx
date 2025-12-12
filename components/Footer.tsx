@@ -1,4 +1,4 @@
-// Version 1.9
+// Version 2.0
 import React, { useState } from 'react';
 import { Mail, Linkedin, Phone, Heart, Copy, Check, Github } from 'lucide-react';
 import { PROFILE, TRANSLATIONS } from '../constants';
@@ -81,7 +81,7 @@ const Footer: React.FC<FooterProps> = ({ lang = 'es' }) => {
             </div>
             <div className="text-left">
               <p className="text-xs text-slate-500 dark:text-slate-400">{content.github}</p>
-              <p className="text-slate-800 dark:text-slate-200 font-medium">/franciscocarle</p>
+              <p className="text-slate-800 dark:text-slate-200 font-medium">/jfcosm</p>
             </div>
           </a>
           

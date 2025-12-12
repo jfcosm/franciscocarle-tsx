@@ -1,4 +1,4 @@
-// Version 2.2
+// Version 2.3
 import { Project, NavItem, Translations } from './types';
 import { 
   Code, 
@@ -27,7 +27,7 @@ export const PROFILE = {
   phone: "+56 9 3078 1181",
   location: "Santiago, Chile",
   linkedin: "https://www.linkedin.com/in/franciscocarle/",
-  github: "https://github.com/franciscocarle",
+  github: "https://github.com/jfcosm",
   appleMusic: "https://music.apple.com/cl/artist/francisco-carle/1662050530",
   image: "/perfil.jpg",
   googleAnalyticsId: "G-36VY3R5GTR", // Reemplaza con tu ID de medición (ej: G-1234567890)
@@ -241,7 +241,7 @@ export const TRANSLATIONS: Translations = {
       main_text: 'Mon profil technique me permet de comprendre le code, tandis que mon leadership assure la livraison. La musique m\'apporte l\'écoute active.',
       agile_title: 'Leadership Agile (7+ Ans)', agile_desc: 'Facilitation experte, métriques, coaching d\'équipe. Certified Scrum Master.',
       dev_title: 'Expertise Technique', dev_desc: 'Capable de dialogar avec les ingénieurs et de développer en React 18 et Python.',
-      soft_title: 'Communication & Stratégie', soft_desc: 'Capacité à gérer les parties prenantes et à diriger des équipes multiculturelles (Anglais C2).'
+      soft_title: 'Communication & Stratégie', soft_desc: 'Capacité à gérer les parties prenantes et à diriger des équipes multiculturais (Anglais C2).'
     },
     projects: { 
       subtitle: 'Développement d\'Applications Modernes', stack_label: 'Stack Principal :',
@@ -478,7 +478,7 @@ export const TRANSLATIONS: Translations = {
     footer: { title: 'संपर्क', subtitle: 'अगली परियोजना के लिए।', rights: 'सर्वाधिकार सुरक्षित।', made_by: 'के साथ बनाया गया', tech_by: 'React & Tailwind में', copy_email: 'ईमेल कॉपी करें', copied: 'कॉपी किया गया!', github: 'GitHub' }
   },
   gu: {
-    nav: { home: 'હોમ', philosophy: 'ફિલોસોફી', projects: 'પ્રોજેક્ટ્સ', music: 'સંગીત', experience: 'અનુભવ', contact_btn: 'સંપર્ક' },
+    nav: { home: 'होम', philosophy: 'ફિલોસોફી', projects: 'પ્રોજેક્ટ્સ', music: 'સંગીત', experience: 'અનુભવ', contact_btn: 'સંપર્ક' },
     hero: {
       role: 'સિનિયર સ્ક્રમ માસ્ટર (7+ વર્ષ) | એજાઇલ કોચ',
       tagline_1: 'એજાઇલ નેતૃત્વ', tagline_2: '+ તકનીકી દ્રષ્ટિ', tagline_3: 'પરિણામો માટે.',
