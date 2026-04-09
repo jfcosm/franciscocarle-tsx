@@ -1,5 +1,7 @@
 // Version 2.3
 import { Project, NavItem, Translations } from './types';
+import { TESTIMONIALS_ES, TESTIMONIALS_EN, TESTIMONIALS_PT } from './testimonials';
+import { TESTIMONIALS_FR, TESTIMONIALS_IT, TESTIMONIALS_DE, TESTIMONIALS_JA, TESTIMONIALS_KO, TESTIMONIALS_ZH, TESTIMONIALS_AR, TESTIMONIALS_HI, TESTIMONIALS_GU } from './testimonials_ext';
 import { 
   Code, 
   Music, 
@@ -157,7 +159,8 @@ export const TRANSLATIONS: Translations = {
       production_title: 'Producción', production_desc: 'Trabajo con Logic Pro X, Arturia V Collection y sintetizadores analógicos virtuales. Música original para documentales, jingles y spots de TV.',
       listen_btn: 'Escuchar en Apple Music', studio_title: 'Estudio Virtual'
     },
-    titles: { philosophy: 'Perfil Profesional', projects: 'Portafolio Técnico', music: 'Producción Musical', experience: 'Trayectoria Profesional', contact: 'Hablemos' },
+    titles: { philosophy: 'Perfil Profesional', projects: 'Portafolio Técnico', music: 'Producción Musical', experience: 'Trayectoria Profesional', testimonials: 'Lo que dicen de mí', contact: 'Hablemos' },
+    testimonials: TESTIMONIALS_ES,
     footer: { title: 'Hablemos', subtitle: 'Ya sea para liderar tu transformación ágil, potenciar tu equipo de desarrollo o gestionar proyectos complejos.', rights: 'Todos los derechos reservados.', made_by: 'Hecho con', tech_by: 'en React & Tailwind por', copy_email: 'Copiar Email', copied: '¡Copiado!', github: 'GitHub' }
   },
   en: {
@@ -225,7 +228,8 @@ export const TRANSLATIONS: Translations = {
       production_title: 'Production', production_desc: 'Work with Logic Pro X, Arturia V Collection, and virtual analog synthesizers. Original music for documentaries, jingles, and TV spots.',
       listen_btn: 'Listen on Apple Music', studio_title: 'Virtual Studio'
     },
-    titles: { philosophy: 'Professional Profile', projects: 'Technical Portfolio', music: 'Music Production', experience: 'Professional Experience', contact: 'Let\'s Talk' },
+    titles: { philosophy: 'Professional Profile', projects: 'Technical Portfolio', music: 'Music Production', experience: 'Professional Experience', testimonials: 'What they say about me', contact: 'Let\'s Talk' },
+    testimonials: TESTIMONIALS_EN,
     footer: { title: 'Let\'s Talk', subtitle: 'Whether to lead your agile transformation, boost your dev team, or manage complex projects.', rights: 'All rights reserved.', made_by: 'Made with', tech_by: 'in React & Tailwind by', copy_email: 'Copy Email', copied: 'Copied!', github: 'GitHub' }
   },
   fr: {
@@ -287,7 +291,8 @@ export const TRANSLATIONS: Translations = {
       production_title: 'Produção', production_desc: 'Musique originale pour documentaires et TV.',
       listen_btn: 'Écouter sur Apple Music', studio_title: 'Studio Virtuel'
     },
-    titles: { philosophy: 'Profil Pro', projects: 'Portfolio Tech', music: 'Production Musicale', experience: 'Expérience Professionnelle', contact: 'Parlons' },
+    titles: { philosophy: 'Profil Pro', projects: 'Portfolio Tech', music: 'Production Musicale', experience: 'Expérience Professionnelle', testimonials: "Ce qu'ils disent de moi", contact: 'Parlons' },
+    testimonials: TESTIMONIALS_FR,
     footer: { title: 'Parlons', subtitle: 'Pour mener votre transformation agile ou gérer vos projets.', rights: 'Tous droits réservés.', made_by: 'Fait avec', tech_by: 'en React & Tailwind par', copy_email: 'Copier Email', copied: 'Copié !', github: 'GitHub' }
   },
   pt: {
@@ -349,7 +354,8 @@ export const TRANSLATIONS: Translations = {
       production_title: 'Produção', production_desc: 'Música original para documentários e TV.',
       listen_btn: 'Ouvir na Apple Music', studio_title: 'Estúdio Virtual'
     },
-    titles: { philosophy: 'Perfil Pro', projects: 'Portfólio Tech', music: 'Produção Musical', experience: 'Experiência', contact: 'Contato' },
+    titles: { philosophy: 'Perfil Pro', projects: 'Portfólio Tech', music: 'Produção Musical', experience: 'Experiência', testimonials: 'O que dizem sobre mim', contact: 'Contato' },
+    testimonials: TESTIMONIALS_PT,
     footer: { title: 'Vamos Conversar', subtitle: 'Para liderar sua transformação ágil ou gerenciar projetos.', rights: 'Todos os direitos reservados.', made_by: 'Feito com', tech_by: 'em React & Tailwind por', copy_email: 'Copiar Email', copied: 'Copiado!', github: 'GitHub' }
   },
   it: {
@@ -364,7 +370,8 @@ export const TRANSLATIONS: Translations = {
       cencosud: { company: "Cencosud Scotiabank", role: "Scrum Master", period: "Mar 2018 – Mar 2021", location: "Santiago, Cile", description: ["Progetti Tech Finanza.", "Miglioramento sprint al 92%.", "Cultura agile."], skills: ["Finance Tech", "Agile"] }
     },
     music: { profile_label: 'Lato Creativo', main_desc: 'Musicista e produttore.', discography_title: 'Discografia', discography_desc: '2 Album e 4 Singoli.', production_title: 'Produzione', production_desc: 'Musica originale per TV.', listen_btn: 'Ascolta su Apple Music', studio_title: 'Studio Virtuale' },
-    titles: { philosophy: 'Profilo Pro', projects: 'Portfolio', music: 'Produzione', experience: 'Esperienza', contact: 'Parliamo' },
+    titles: { philosophy: 'Profilo Pro', projects: 'Portfolio', music: 'Produzione', experience: 'Esperienza', testimonials: 'Cosa dicono di me', contact: 'Parliamo' },
+    testimonials: TESTIMONIALS_IT,
     footer: { title: 'Parliamo', subtitle: 'Per il tuo prossimo progetto.', rights: 'Diritti riservati.', made_by: 'Fatto con', tech_by: 'in React & Tailwind da', copy_email: 'Copia Email', copied: 'Copiato!', github: 'GitHub' }
   },
   de: {
@@ -379,7 +386,8 @@ export const TRANSLATIONS: Translations = {
       cencosud: { company: "Cencosud Scotiabank", role: "Scrum Master", period: "Mär 2018 – Mär 2021", location: "Santiago, Chile", description: ["Finanz-Tech Projekte.", "Sprint-Abschluss 92%.", "Agile Kultur."], skills: ["Finance Tech", "Agile"] }
     },
     music: { profile_label: 'Kreativ', main_desc: 'Musiker und Produzent.', discography_title: 'Diskografie', discography_desc: '2 Alben, 4 Singles.', production_title: 'Produktion', production_desc: 'Originalmusik für TV.', listen_btn: 'Apple Music', studio_title: 'Virtuelles Studio' },
-    titles: { philosophy: 'Profil', projects: 'Projekte', music: 'Musik', experience: 'Erfahrung', contact: 'Kontakt' },
+    titles: { philosophy: 'Profil', projects: 'Projekte', music: 'Musik', experience: 'Erfahrung', testimonials: 'Was sie über mich sagen', contact: 'Kontakt' },
+    testimonials: TESTIMONIALS_DE,
     footer: { title: 'Kontakt', subtitle: 'Für Ihr nächstes Projekt.', rights: 'Rechte vorbehalten.', made_by: 'Gemacht mit', tech_by: 'in React & Tailwind von', copy_email: 'Email kopieren', copied: 'Kopiert!', github: 'GitHub' }
   },
   ja: {
@@ -394,7 +402,8 @@ export const TRANSLATIONS: Translations = {
       cencosud: { company: "Cencosud Scotiabank", role: "スクラムマスター", period: "2018年3月 – 2021年3月", location: "サンティアゴ", description: ["金融テックプロジェクト。", "スプリント完了率92%。", "アジャイル文化の推進。"], skills: ["Finance Tech", "Agile"] }
     },
     music: { profile_label: 'クリエイティブ', main_desc: '音楽家兼プロデューサー。', discography_title: 'ディスコグラフィー', discography_desc: 'アルバム2枚、シングル4枚。', production_title: '制作', production_desc: 'TV向けオリジナル音楽。', listen_btn: 'Apple Music', studio_title: 'スタジオ' },
-    titles: { philosophy: 'プロフィール', projects: 'プロジェクト', music: '音楽制作', experience: '経歴', contact: 'お問い合わせ' },
+    titles: { philosophy: 'プロフィール', projects: 'プロジェクト', music: '音楽制作', experience: '経歴', testimonials: '私についての評価', contact: 'お問い合わせ' },
+    testimonials: TESTIMONIALS_JA,
     footer: { title: 'お問い合わせ', subtitle: '新しいプロジェクトのために。', rights: '無断転載禁止。', made_by: '作成者', tech_by: 'React & Tailwind で', copy_email: 'メールをコピー', copied: 'コピーしました！', github: 'GitHub' }
   },
   ko: {
@@ -409,7 +418,8 @@ export const TRANSLATIONS: Translations = {
       cencosud: { company: "Cencosud", role: "스크럼 마스터", period: "2018.03 – 2021.03", location: "칠레", description: ["핀테크 프로젝트.", "문화 확산."], skills: ["Agile"] }
     },
     music: { profile_label: '창의성', main_desc: '음악가 및 프로듀서.', discography_title: '디스코그래피', discography_desc: '앨범 2장.', production_title: '제작', production_desc: 'TV 음악.', listen_btn: 'Apple Music', studio_title: '스튜디오' },
-    titles: { philosophy: '프로필', projects: '프로젝트', music: '음악', experience: '경력', contact: '문의' },
+    titles: { philosophy: '프로필', projects: '프로젝트', music: '음악', experience: '경력', testimonials: '사람들의 평가', contact: '문의' },
+    testimonials: TESTIMONIALS_KO,
     footer: { title: '문의', subtitle: '프로젝트 문의.', rights: '판권 소유.', made_by: '제작', tech_by: 'React & Tailwind 로', copy_email: '이메일 복사', copied: '복사됨!', github: 'GitHub' }
   },
   zh: {
@@ -424,7 +434,8 @@ export const TRANSLATIONS: Translations = {
       cencosud: { company: "Cencosud", role: "Scrum Master", period: "2018.03 – 2021.03", location: "智利", description: ["金融科技项目。", "推广敏捷文化。"], skills: ["Agile"] }
     },
     music: { profile_label: '创意', main_desc: '音乐家和制作人。', discography_title: '唱片', discography_desc: '2张专辑。', production_title: '制作', production_desc: '原创音乐。', listen_btn: 'Apple Music', studio_title: '工作室' },
-    titles: { philosophy: '简介', projects: '项目', music: '音乐', experience: '经验', contact: '联系' },
+    titles: { philosophy: '简介', projects: '项目', music: '音乐', experience: '经验', testimonials: '他们怎么说', contact: '联系' },
+    testimonials: TESTIMONIALS_ZH,
     footer: { title: '联系', subtitle: '合作项目。', rights: '版权所有。', made_by: '制作', tech_by: '使用 React & Tailwind 由', copy_email: '复制邮箱', copied: '已复制！', github: 'GitHub' }
   },
   ar: {
@@ -439,7 +450,8 @@ export const TRANSLATIONS: Translations = {
       cencosud: { company: "Cencosud", role: "سكروم ماستر", period: "2018 - 2021", location: "تشيلي", description: ["مشاريع مالية.", "ثقافة أجايل."], skills: ["Agile"] }
     },
     music: { profile_label: 'إبداع', main_desc: 'موسيقي ومنتج.', discography_title: 'أعمال', discography_desc: 'ألبومان.', production_title: 'إنتاج', production_desc: 'موسيقى أصلية.', listen_btn: 'Apple Music', studio_title: 'استوديو' },
-    titles: { philosophy: 'الملف', projects: 'مشاريع', music: 'موسيقى', experience: 'خبرة', contact: 'تواصل' },
+    titles: { philosophy: 'الملف', projects: 'مشاريع', music: 'موسيقى', experience: 'خبرة', testimonials: 'ماذا يقولون عني', contact: 'تواصل' },
+    testimonials: TESTIMONIALS_AR,
     footer: { title: 'تواصل', subtitle: 'لبدء مشروعك.', rights: 'جميع الحقوق محفوظة.', made_by: 'صنع بـ', tech_by: 'بواسطة React & Tailwind', copy_email: 'نسخ الإيميل', copied: 'تم النسخ!', github: 'GitHub' }
   },
   hi: {
@@ -474,7 +486,8 @@ export const TRANSLATIONS: Translations = {
       cencosud: { company: "Cencosud Scotiabank", role: "स्क्रम मास्टर", period: "मार्च 2018 – मार्च 2021", location: "सैंटियागो, चिली", description: ["वित्त तकनीकी परियोजनाएं।", "स्प्रिंट पूर्णता 92%।", "एजाइल संस्कृति।"], skills: ["Finance Tech", "Agile"] }
     },
     music: { profile_label: 'रचनात्मक', main_desc: 'संगीतकार और निर्माता।', discography_title: 'डिस्कोग्राफी', discography_desc: '2 एल्बम और 4 एकल।', production_title: 'उत्पादन', production_desc: 'टीवी के लिए मूल संगीत।', listen_btn: 'Apple Music', studio_title: 'स्टूडियो' },
-    titles: { philosophy: 'प्रोफ़ाइल', projects: 'परियोजनाएं', music: 'संगीत', experience: 'अनुभव', contact: 'संपर्क' },
+    titles: { philosophy: 'प्रोफ़ाइल', projects: 'परियोजनाएं', music: 'संगीत', experience: 'अनुभव', testimonials: 'वे मेरे बारे में क्या कहते हैं', contact: 'संपर्क' },
+    testimonials: TESTIMONIALS_HI,
     footer: { title: 'संपर्क', subtitle: 'अगली परियोजना के लिए।', rights: 'सर्वाधिकार सुरक्षित।', made_by: 'के साथ बनाया गया', tech_by: 'React & Tailwind में', copy_email: 'ईमेल कॉपी करें', copied: 'कॉपी किया गया!', github: 'GitHub' }
   },
   gu: {
@@ -509,7 +522,8 @@ export const TRANSLATIONS: Translations = {
       cencosud: { company: "Cencosud", role: "સ્ક્રમ માસ્ટર", period: "2018 – 2021", location: "ચિલી", description: ["ફાઇનાન્સ પ્રોજેક્ટ્સ.", "એજાઇલ સંસ્કૃતિ."], skills: ["Agile"] }
     },
     music: { profile_label: 'સર્જનાત્મક', main_desc: 'સંગીતકાર અને નિર્માતા.', discography_title: 'ડિસ્કોગ્રાફી', discography_desc: '2 આલ્બમ્સ.', production_title: 'ઉત્પાદન', production_desc: 'ટીવી સંગીત.', listen_btn: 'Apple Music', studio_title: 'સ્ટુડિયો' },
-    titles: { philosophy: 'પ્રોફાઇલ', projects: 'પ્રોજેક્ટ્સ', music: 'સંગીત', experience: 'અનુભવ', contact: 'સંપર્ક' },
+    titles: { philosophy: 'પ્રોફાઇલ', projects: 'પ્રોજેક્ટ્સ', music: 'સંગીત', experience: 'અનુભવ', testimonials: 'મારા વિશે તેઓ શું કહે છે', contact: 'સંપર્ક' },
+    testimonials: TESTIMONIALS_GU,
     footer: { title: 'સંપર્ક', subtitle: 'પ્રોજેક્ટ માટે.', rights: 'સર્વાધિકાર સુરક્ષિત.', made_by: 'દ્વારા બનાવેલ', tech_by: 'React & Tailwind માં', copy_email: 'ઇમેઇલ કોપી કરો', copied: 'કોપી થયું!', github: 'GitHub' }
   }
 };

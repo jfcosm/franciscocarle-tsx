@@ -32,6 +32,7 @@ export default {
         blob: "blob 7s infinite",
         'fade-in-up': 'fadeInUp 0.8s ease-out',
         'bounce-slow': 'bounce 3s infinite',
+        marquee: 'marquee 120s linear infinite',
       },
       keyframes: {
         blob: {
@@ -43,6 +44,10 @@ export default {
         fadeInUp: {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
         }
       },
     },

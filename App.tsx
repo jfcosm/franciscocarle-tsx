@@ -6,6 +6,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import MusicSection from './components/Music';
 import Resume from './components/Resume';
+import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import Background from './components/Background';
 import { LanguageCode } from './types';
@@ -45,6 +46,7 @@ const App: React.FC = () => {
         <Projects lang={lang} />
         <MusicSection lang={lang} />
         <Resume lang={lang} />
+        <Testimonials lang={lang} />
       </main>
       
       <Footer lang={lang} />

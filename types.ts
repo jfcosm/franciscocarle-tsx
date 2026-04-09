@@ -26,6 +26,13 @@ export interface Job {
   skills: string[];
 }
 
+export interface Testimonial {
+  name: string;
+  role: string;
+  company?: string;
+  text: string;
+}
+
 export interface SocialLink {
   platform: string;
   url: string;
@@ -81,8 +88,10 @@ export interface Translations {
       projects: string;
       music: string;
       experience: string;
+      testimonials: string;
       contact: string;
     };
+    testimonials: Testimonial[];
     footer: {
       title: string;
       subtitle: string;
