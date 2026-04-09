@@ -7,7 +7,8 @@ import {
   Music, 
   Users, 
   BookOpen, 
-  Mic2
+  Mic2,
+  Terminal
 } from 'lucide-react';
 
 // Navigation
@@ -37,6 +38,15 @@ export const PROFILE = {
 
 // Projects Data
 export const PROJECTS: Project[] = [
+  {
+    id: "cyberstage",
+    title: "CyberStage",
+    description: "Plataforma de Platform Engineering y DevSecOps. Automatización de infraestructura cloud-native para acelerar la Developer Experience.",
+    tags: ["Kubernetes", "Terraform", "DevSecOps", "GitOps"],
+    link: "https://cyberstage.cl",
+    category: "tech",
+    icon: <Terminal className="w-6 h-6 text-cyan-400" />
+  },
   {
     id: "armonix",
     title: "Armonix.app",
@@ -111,7 +121,7 @@ export const TRANSLATIONS: Translations = {
     },
     projects: { 
       subtitle: 'Proyectos de Desarrollo y Gestión', stack_label: 'Stack Principal:',
-      descriptions: {
+      descriptions: { cyberstage: "Plataforma de Platform Engineering y DevSecOps. Automatización cloud-native para acelerar la Developer Experience.",
         armonix: "Herramienta educativa musical interactiva con visualizador de acordes, Groovebox y secuenciador. Una de las apps musicales más completas desarrolladas localmente.",
         palabra: "Plataforma litúrgica con lecturas diarias y reflexiones generadas por IA. Arquitectura moderna y estable.",
         ensayemos: "Gestión para bandas: votación de ensayos, setlists interactivos y repositorio de acordes. Resuelve problemas reales de logística musical.",
@@ -180,7 +190,7 @@ export const TRANSLATIONS: Translations = {
     },
     projects: { 
       subtitle: 'Development & Management Projects', stack_label: 'Main Stack:',
-      descriptions: {
+      descriptions: { cyberstage: "Platform Engineering and DevSecOps platform. Cloud-native automation to accelerate Developer Experience.",
         armonix: "Interactive musical educational tool with chord visualizer, Groovebox, and sequencer. One of the most complete locally developed music apps.",
         palabra: "Liturgical platform with daily readings and AI-generated reflections. Modern and stable architecture.",
         ensayemos: "Band management: rehearsal voting, interactive setlists, and chord repository. Solves real musical logistics problems.",
@@ -249,7 +259,7 @@ export const TRANSLATIONS: Translations = {
     },
     projects: { 
       subtitle: 'Développement d\'Applications Modernes', stack_label: 'Stack Principal :',
-      descriptions: {
+      descriptions: { cyberstage: "Plateforme Platform Engineering et DevSecOps. Automatisation cloud-native pour accélérer l'expérience développeur.",
         armonix: "Outil éducatif musical interactif avec visualiseur d'accords. Une des apps musicales locales les plus complètes.",
         palabra: "Plateforme liturgique avec lectures quotidiennes et réflexions générées par IA.",
         ensayemos: "Gestion de groupes : vote de répétitions, setlists interactives et répertoire d'accords.",
@@ -312,7 +322,7 @@ export const TRANSLATIONS: Translations = {
     },
     projects: { 
       subtitle: 'Desenvolvimento de Aplicações Modernes', stack_label: 'Stack Principal:',
-      descriptions: {
+      descriptions: { cyberstage: "Plataforma de Platform Engineering e DevSecOps. Automação cloud-native para acelerar a Experiência do Desenvolvedor.",
         armonix: "Ferramenta educativa musical interativa com visualizador de acordes. Uma das apps musicais locais mais completas.",
         palabra: "Plataforma litúrgica com leituras diárias e reflexões geradas por IA. Arquitetura moderna.",
         ensayemos: "Gestão para bandas: votação de ensaios, setlists e repositório de acordes.",
@@ -362,7 +372,7 @@ export const TRANSLATIONS: Translations = {
     nav: { home: 'Home', philosophy: 'Filosofia', projects: 'Progetti', music: 'Musica', experience: 'Esperienza', contact_btn: 'Contattami' },
     hero: { role: 'Senior Scrum Master (7+ Anni) | Agile Coach', tagline_1: 'Leadership Agile', tagline_2: '+ Visione Tecnica', tagline_3: 'per risultati.', synthesis: 'Facilito la creazione di valore unendo gestione agile ed esperienza tecnica.', cta_portfolio: 'Vedi Portfolio', cta_linkedin: 'LinkedIn', years_exp: 'Anni Exp Agile', albums: 'Album', teams: 'Team Guidati', available: 'Disponibile', github: 'GitHub' },
     about: { main_text: 'Il mio profilo tecnico aiuta a capire il codice, la leadership assicura la consegna.', agile_title: 'Leadership Agile', agile_desc: 'Facilitazione esperta, metriche e coaching.', dev_title: 'Expertise Tecnica', dev_desc: 'Capacità di dialogo con ingegneri.', soft_title: 'Comunicazione e Strategia', soft_desc: 'Gestione stakeholder e team multiculturali.' },
-    projects: { subtitle: 'Sviluppo Applicazioni Moderne', stack_label: 'Stack:', descriptions: { armonix: "Strumento educativo musicale interattivo.", palabra: "Piattaforma liturgica con riflessioni IA.", ensayemos: "Gestione per band musicali.", emaus: "Sistema di gestione parrocchiale integrale.", melodialab: "Il mio studio di sviluppo." } },
+    projects: { subtitle: 'Sviluppo Applicazioni Moderne', stack_label: 'Stack:', descriptions: { cyberstage: "Piattaforma di Platform Engineering e DevSecOps. Automazione cloud-native.", armonix: "Strumento educativo musicale interattivo.", palabra: "Piattaforma liturgica con riflessioni IA.", ensayemos: "Gestione per band musicali.", emaus: "Sistema di gestione parrocchiale integrale.", melodialab: "Il mio studio di sviluppo." } },
     jobs: {
       thomson: { company: "Thomson Reuters", role: "Sviluppatore Python Full Stack", period: "Mar 2025 – Presente", location: "Cile / Remoto", description: ["Architettura modulare per automazione.", "Scraping robot Python.", "Lavoro agile CI/CD.", "Sviluppo frontend basato su Laravel."], skills: ["Python", "Scrum"] },
       onikom: { company: "Onikom Latam", role: "Scrum Master Senior", period: "Apr 2024 – Dic 2024", location: "Messico / Remoto", description: ["Leadership di 6+ team agili distribuiti.", "Testing e compilazione app mobili .NET MAUI.", "Gestione stakeholder e proposte tecnologiche per USA."], skills: ["Agile Coaching", "Leadership"] },
@@ -378,7 +388,7 @@ export const TRANSLATIONS: Translations = {
     nav: { home: 'Start', philosophy: 'Philosophie', projects: 'Projekte', music: 'Musik', experience: 'Erfahrung', contact_btn: 'Kontakt' },
     hero: { role: 'Senior Scrum Master (7+ Jahre)', tagline_1: 'Agile Führung', tagline_2: '+ Technische Vision', tagline_3: 'für Ergebnisse.', synthesis: 'Ich verbinde agiles Management mit technischer Expertise.', cta_portfolio: 'Portfolio', cta_linkedin: 'LinkedIn', years_exp: 'Jahre Agile', albums: 'Alben', teams: 'Teams', available: 'Verfügbar', github: 'GitHub' },
     about: { main_text: 'Mein technisches Profil hilft, Code zu verstehen, Führung sichert die Lieferung.', agile_title: 'Agile Führung', agile_desc: 'Experten-Facilitation, Metriken.', dev_title: 'Technische Expertise', dev_desc: 'Dialog mit Ingenieuren.', soft_title: 'Kommunikation & Strategie', soft_desc: 'Stakeholder-Management und multikulturelle Führung.' },
-    projects: { subtitle: 'Moderne App-Entwicklung', stack_label: 'Stack:', descriptions: { armonix: "Interaktives Musik-Lern-Tool.", palabra: "Liturgische Plattform mit KI.", ensayemos: "Management für Bands.", emaus: "Pfarrverwaltungssystem.", melodialab: "Mein Entwicklungsstudio." } },
+    projects: { subtitle: 'Moderne App-Entwicklung', stack_label: 'Stack:', descriptions: { cyberstage: "Platform Engineering und DevSecOps. Cloud-native Automatisierung.", armonix: "Interaktives Musik-Lern-Tool.", palabra: "Liturgische Plattform mit KI.", ensayemos: "Management für Bands.", emaus: "Pfarrverwaltungssystem.", melodialab: "Mein Entwicklungsstudio." } },
     jobs: {
       thomson: { company: "Thomson Reuters", role: "Python Full Stack Entwickler", period: "Mär 2025 – Heute", location: "Chile / Remote", description: ["Modulare Architektur.", "Python Scraping Bots.", "Agiles Arbeiten.", "Frontend-Entwicklung basierend auf Laravel."], skills: ["Python", "Scrum"] },
       onikom: { company: "Onikom Latam", role: "Senior Scrum Master", period: "Apr 2024 – Dez 2024", location: "Mexiko / Remote", description: ["Führung von 6+ verteilten agilen Teams.", "Testing von .NET MAUI Apps.", "Stakeholder-Management und technische Angebote für USA."], skills: ["Agile Coaching", "Leadership"] },
@@ -394,7 +404,7 @@ export const TRANSLATIONS: Translations = {
     nav: { home: 'ホーム', philosophy: '哲学', projects: 'プロジェクト', music: '音楽', experience: '経験', contact_btn: 'お問い合わせ' },
     hero: { role: 'シニアスクラムマスター (7年以上)', tagline_1: 'アジャイルリーダーシップ', tagline_2: '+ 技術的ビジョン', tagline_3: '結果のために。', synthesis: 'アジャイル管理と技術的専門知識を組み合わせて価値を提供します。', cta_portfolio: 'ポートフォリオ', cta_linkedin: 'LinkedIn', years_exp: '経験年数', albums: 'アルバム', teams: 'チーム', available: '募集中', github: 'GitHub' },
     about: { main_text: '開発者としての視点とリーダーシップで、プロジェクトを成功に導きます。', agile_title: 'アジャイルリーダーシップ', agile_desc: 'ファシリテーション、コーチング。', dev_title: '技術的専門知識', dev_desc: 'エンジニアとの対話能力。', soft_title: 'コミュニケーションと戦略', soft_desc: 'ステークホルダー管理と多文化チームの指導。' },
-    projects: { subtitle: 'アプリ開発', stack_label: 'スタック:', descriptions: { armonix: "インタラクティブな音楽教育ツール。", palabra: "AI生成による典礼プラットフォーム。", ensayemos: "バンド管理ツール。", emaus: "包括的な教区管理システム。", melodialab: "私の開発スタジオ。" } },
+    projects: { subtitle: 'アプリ開発', stack_label: 'スタック:', descriptions: { cyberstage: "Platform EngineeringとDevSecOpsプラットフォーム。クラウドネイティブの自動化。", armonix: "インタラクティブな音楽教育ツール。", palabra: "AI生成による典礼プラットフォーム。", ensayemos: "バンド管理ツール。", emaus: "包括的な教区管理システム。", melodialab: "私の開発スタジオ。" } },
     jobs: {
       thomson: { company: "Thomson Reuters", role: "Pythonフルスタック開発者", period: "2025年3月 – 現在", location: "チリ / リモート", description: ["自動化のためのモジュラーアーキテクチャ。", "Pythonスクレイピングボット。", "アジャイル開発。", "Laravelベースのフロントエンド開発。"], skills: ["Python", "Scrum"] },
       onikom: { company: "Onikom Latam", role: "シニアスクラムマスター", period: "2024年4月 – 12月", location: "メキシコ / リモート", description: ["6+のアジャイルチームを指導。", ".NET MAUIアプリのテストと管理。", "米国向け技術提案の管理。"], skills: ["Agile Coaching", "Leadership"] },
@@ -410,7 +420,7 @@ export const TRANSLATIONS: Translations = {
     nav: { home: '홈', philosophy: '철학', projects: '프로젝트', music: '음악', experience: '경력', contact_btn: '문의하기' },
     hero: { role: '시니어 스크럼 마스터', tagline_1: '애자일 리더십', tagline_2: '+ 기술적 비전', tagline_3: '성과를 위해.', synthesis: '애자일 관리와 기술 전문성을 결합합니다.', cta_portfolio: '포트폴리오', cta_linkedin: 'LinkedIn', years_exp: '경력', albums: '앨범', teams: '팀', available: '가능', github: 'GitHub' },
     about: { main_text: '기술적 배경과 리더십으로 가치를 전달합니다.', agile_title: '애자일 리더십', agile_desc: '코칭 및 퍼실리테이션.', dev_title: '기술 전문성', dev_desc: '엔지니어와의 소통.', soft_title: '커뮤니케이션 및 전략', soft_desc: '이해관계자 관리 및 다문화 팀 리더십.' },
-    projects: { subtitle: '앱 개발', stack_label: '스택:', descriptions: { armonix: "음악 교육 도구.", palabra: "전례 플랫폼.", ensayemos: "밴드 관리.", emaus: "교구 관리 시스템.", melodialab: "개발 스튜디오." } },
+    projects: { subtitle: '앱 개발', stack_label: '스택:', descriptions: { cyberstage: "플랫폼 엔지니어링 및 DevSecOps. 클라우드 네이티브 자동화.", armonix: "음악 교육 도구.", palabra: "전례 플랫폼.", ensayemos: "밴드 관리.", emaus: "교구 관리 시스템.", melodialab: "개발 스튜디오." } },
     jobs: {
       thomson: { company: "Thomson Reuters", role: "Python 풀스택 개발자", period: "2025.03 – 현재", location: "칠레", description: ["모듈식 아키텍처.", "스크래핑 봇.", "Laravel 기반 프론트엔드 개발."], skills: ["Python", "Scrum"] },
       onikom: { company: "Onikom Latam", role: "시니어 스크럼 마스터", period: "2024.04 – 12", location: "멕시코", description: ["6+ 분산 팀 리딩.", ".NET MAUI 앱 테스트 및 관리.", "미국 기업 기술 제안 관리."], skills: ["Agile", "Leadership"] },
@@ -426,7 +436,7 @@ export const TRANSLATIONS: Translations = {
     nav: { home: '首页', philosophy: '理念', projects: '项目', music: '音乐', experience: '经验', contact_btn: '联系我' },
     hero: { role: '高级 Scrum Master', tagline_1: '敏捷领导力', tagline_2: '+ 技术视野', tagline_3: '创造结果。', synthesis: '结合敏捷管理和全栈技术专长。', cta_portfolio: '作品集', cta_linkedin: 'LinkedIn', years_exp: '年经验', albums: '专辑', teams: '团队', available: '可用', github: 'GitHub' },
     about: { main_text: '利用技术背景和领导力交付价值。', agile_title: '敏捷领导力', agile_desc: '团队辅导。', dev_title: '技术专长', dev_desc: '与工程师沟通。', soft_title: '沟通与策略', soft_desc: '利益相关者管理和多文化团队领导。' },
-    projects: { subtitle: '应用开发', stack_label: '技术栈:', descriptions: { armonix: "音乐教育工具。", palabra: "礼仪平台。", ensayemos: "乐队管理。", emaus: "教区管理系统。", melodialab: "开发工作室。" } },
+    projects: { subtitle: '应用开发', stack_label: '技术栈:', descriptions: { cyberstage: "Platform Engineering与DevSecOps平台。云原生基础架构自动化。", armonix: "音乐教育工具。", palabra: "礼仪平台。", ensayemos: "乐队管理。", emaus: "教区管理系统。", melodialab: "开发工作室。" } },
     jobs: {
       thomson: { company: "Thomson Reuters", role: "Python 全栈开发", period: "2025.03 – 至今", location: "智利", description: ["模块化架构。", "爬虫机器人。", "基于 Laravel 的前端开发。"], skills: ["Python"] },
       onikom: { company: "Onikom Latam", role: "高级 Scrum Master", period: "2024.04 – 12", location: "墨西哥", description: ["领导6+个分布式团队。", ".NET MAUI 应用测试与管理。", "管理针对美国企业的技术提案。"], skills: ["Agile"] },
@@ -442,7 +452,7 @@ export const TRANSLATIONS: Translations = {
     nav: { home: 'الرئيسية', philosophy: 'الفلسفة', projects: 'المشاريع', music: 'الموسيقى', experience: 'الخبرة', contact_btn: 'تواصل معي' },
     hero: { role: 'سكروم ماستر', tagline_1: 'قيادة أجايل', tagline_2: '+ رؤية تقنية', tagline_3: 'لتحقيق النتائج.', synthesis: 'الجمع بين إدارة أجايل والخبرة التقنية.', cta_portfolio: 'المحفظة', cta_linkedin: 'لينكد إن', years_exp: 'خبرة', albums: 'ألبومات', teams: 'فرق', available: 'متاح', github: 'GitHub' },
     about: { main_text: 'استخدام الخلفية التقنية والقيادة لتقديم القيمة.', agile_title: 'قيادة أجايل', agile_desc: 'تدريب الفرق.', dev_title: 'خبرة تقنية', dev_desc: 'التواصل مع المهندسين.', soft_title: 'الاتصال والاستراتيجية', soft_desc: 'إدارة أصحاب المصلحة والقيادة متعددة الثقافات.' },
-    projects: { subtitle: 'تطوير تطبيقات', stack_label: 'التقنيات:', descriptions: { armonix: "أداة تعليمية موسيقية.", palabra: "منصة دينية.", ensayemos: "إدارة الفرق الموسيقية.", emaus: "نظام إدارة.", melodialab: "استوديو التطوير." } },
+    projects: { subtitle: 'تطوير تطبيقات', stack_label: 'التقنيات:', descriptions: { cyberstage: "منصة هندسة المنصات و DevSecOps. أتمتة الأنظمة السحابية.", armonix: "أداة تعليمية موسيقية.", palabra: "منصة دينية.", ensayemos: "إدارة الفرق الموسيقية.", emaus: "نظام إدارة.", melodialab: "استوديو التطوير." } },
     jobs: {
       thomson: { company: "Thomson Reuters", role: "مطور بايثون", period: "مارس 2025 - الآن", location: "تشيلي", description: ["هيكلية معيارية.", "روبوتات.", "تطوير الواجهة الأمامية باستخدام Laravel."], skills: ["Python"] },
       onikom: { company: "Onikom Latam", role: "سكروم ماستر", period: "أبريل 2024 - ديسمبر 2024", location: "المكسيك", description: ["قيادة 6+ فرق.", ".NET MAUI اختبار وإدارة.", "إدارة المقترحات التقنية."], skills: ["Agile"] },
@@ -471,7 +481,7 @@ export const TRANSLATIONS: Translations = {
     },
     projects: {
       subtitle: 'आधुनिक ऐप विकास', stack_label: 'स्टैक:',
-      descriptions: {
+      descriptions: { cyberstage: "प्लेटफॉर्म इंजीनियरिंग और DevSecOps प्लेटफॉर्म। क्लाउड-नेटिव ऑटोमेशन।",
         armonix: "इंटरैक्टिव संगीत शैक्षिक उपकरण।",
         palabra: "दैनिक पाठ और एआई प्रतिबिंबों के साथ मंच।",
         ensayemos: "बैंड प्रबंधन उपकरण।",
@@ -507,7 +517,7 @@ export const TRANSLATIONS: Translations = {
     },
     projects: {
       subtitle: 'એપ વિકાસ', stack_label: 'સ્ટેક:',
-      descriptions: {
+      descriptions: { cyberstage: "પ્લેટફોર્મ એન્જિનિયરિંગ અને DevSecOps પ્લેટફોર્મ. ક્લાઉડ-નેટિવ ઑટોમેશન.",
         armonix: "સંગીત શૈક્ષણિક સાધન.",
         palabra: "AI પ્રતિબિંબ સાથે પ્લેટફોર્મ.",
         ensayemos: "બેન્ડ મેનેજમેન્ટ.",
