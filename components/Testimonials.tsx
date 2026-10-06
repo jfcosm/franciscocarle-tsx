@@ -1,15 +1,17 @@
 import React from 'react';
 import { LanguageCode } from '../types';
-import { TRANSLATIONS } from '../constants';
 import { Linkedin, Quote } from 'lucide-react';
+import { useSiteData } from '../context/SiteDataContext';
 
 interface TestimonialsProps {
   lang: LanguageCode;
 }
 
 const Testimonials: React.FC<TestimonialsProps> = ({ lang }) => {
-  const t = TRANSLATIONS[lang] || TRANSLATIONS['en'];
-  const testimonials = t.testimonials || [];
+  const { data } = useSiteData();
+  const t = data.translations[lang] || data.translations['en'] || data.translations['es'];
+  const testimonials = t?.testimonials || [];
+  const titles = t?.titles;
 
   if (!testimonials || testimonials.length === 0) return null;
 
@@ -21,7 +23,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ lang }) => {
     <section id="testimonials" className="py-24 relative overflow-hidden bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800/50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-16 relative z-10 text-center">
         <h2 className="text-3xl lg:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500 mb-4 tracking-tight">
-          {t.titles.testimonials || 'Lo que dicen de mí'}
+          {titles?.testimonials || 'Lo que dicen de mí'}
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 mx-auto rounded-full mb-6"></div>
       </div>

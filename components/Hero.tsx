@@ -1,29 +1,31 @@
-// Version 1.9
 import React from 'react';
 import { ArrowRight, Code, Music, Github } from 'lucide-react';
-import { PROFILE, TRANSLATIONS } from '../constants';
 import { LanguageCode } from '../types';
+import { useSiteData } from '../context/SiteDataContext';
 
 interface HeroProps {
   lang: LanguageCode;
 }
 
 const Hero: React.FC<HeroProps> = ({ lang }) => {
-  const t = TRANSLATIONS[lang].hero;
+  const { data } = useSiteData();
+  const profile = data.profile;
+  const t = data.translations[lang]?.hero || data.translations['es']?.hero;
+
+  if (!t) return null;
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-      {/* Background Elements managed by global Background component */}
-      
       <div className="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
-        
         {/* Text Content */}
         <div className="space-y-6 animate-fade-in-up" dir={lang === 'ar' ? 'rtl' : 'ltr'}>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 text-xs font-medium text-slate-600 dark:text-slate-300 backdrop-blur-md">
-            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-            {t.available}
-          </div>
-          
+          {t.available && (
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 text-xs font-medium text-slate-600 dark:text-slate-300 backdrop-blur-md">
+              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+              {t.available}
+            </div>
+          )}
+
           <div className="bg-white/30 dark:bg-slate-900/30 backdrop-blur-xl p-8 rounded-3xl border border-white/20 dark:border-white/5 inline-block">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight">
               {t.tagline_1} <br />
@@ -32,40 +34,44 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
               </span> <br />
               {t.tagline_3}
             </h1>
-            
+
             <h2 className="text-lg font-semibold text-primary-600 dark:text-primary-400 mt-4">
-              {t.role}
+              {t.role || profile.role}
             </h2>
 
             <p className="text-xl text-slate-600 dark:text-slate-300 max-w-lg mt-4">
-              {t.synthesis}
+              {t.synthesis || profile.synthesis}
             </p>
           </div>
-          
+
           <div className="flex flex-wrap gap-4 pt-4">
-            <a 
-              href="#projects" 
+            <a
+              href="#projects"
               className="px-8 py-3 rounded-full bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 font-bold hover:bg-slate-800 dark:hover:bg-white transition-transform hover:scale-105 flex items-center gap-2 shadow-lg shadow-slate-900/20"
             >
-              {t.cta_portfolio} <ArrowRight className="w-4 h-4" />
+              {t.cta_portfolio || 'Ver Portafolio'} <ArrowRight className="w-4 h-4" />
             </a>
-            <a 
-              href={PROFILE.linkedin}
-              target="_blank"
-              rel="noreferrer" 
-              className="px-8 py-3 rounded-full border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors backdrop-blur-sm"
-            >
-              {t.cta_linkedin}
-            </a>
-            <a 
-              href={PROFILE.github}
-              target="_blank"
-              rel="noreferrer" 
-              className="px-4 py-3 rounded-full border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors backdrop-blur-sm flex items-center gap-2"
-              title={t.github}
-            >
-               <Github className="w-5 h-5" />
-            </a>
+            {profile.linkedin && (
+              <a
+                href={profile.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="px-8 py-3 rounded-full border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors backdrop-blur-sm"
+              >
+                {t.cta_linkedin || 'LinkedIn'}
+              </a>
+            )}
+            {profile.github && (
+              <a
+                href={profile.github}
+                target="_blank"
+                rel="noreferrer"
+                className="px-4 py-3 rounded-full border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors backdrop-blur-sm flex items-center gap-2"
+                title={t.github || 'GitHub'}
+              >
+                <Github className="w-5 h-5" />
+              </a>
+            )}
           </div>
 
           <div className="flex gap-6 pt-8 border-t border-slate-200 dark:border-slate-800/50">
@@ -87,20 +93,17 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
         {/* Visual / Image */}
         <div className="relative flex justify-center md:justify-end">
           <div className="relative w-80 h-80 md:w-96 md:h-96">
-            {/* Decorative Rings */}
             <div className="absolute inset-0 rounded-full border border-slate-300 dark:border-slate-700/50 animate-[spin_10s_linear_infinite]" />
             <div className="absolute inset-4 rounded-full border border-slate-300 dark:border-slate-700/30 animate-[spin_15s_linear_infinite_reverse]" />
-            
-            {/* Image Container */}
+
             <div className="absolute inset-2 rounded-full overflow-hidden border-4 border-slate-200 dark:border-slate-800 shadow-2xl bg-slate-800">
-              <img 
-                src={PROFILE.image} 
-                alt="Francisco Carle" 
+              <img
+                src={profile.image || '/perfil.jpg'}
+                alt={profile.name || 'Francisco Carle'}
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
             </div>
 
-            {/* Floating Badges */}
             <div className="absolute -left-4 top-20 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200 dark:border-slate-700 p-3 rounded-xl shadow-lg flex items-center gap-3 animate-bounce-slow">
               <div className="p-2 bg-primary-100 dark:bg-primary-500/20 rounded-lg">
                 <Code className="w-5 h-5 text-primary-600 dark:text-primary-400" />
