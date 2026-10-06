@@ -1,13 +1,14 @@
 import { initFirebase } from './firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
+import { doc, getDoc, setDoc } from 'firebase/firestore';
 
 const AUTH_TOKEN_KEY = 'fc_admin_auth_token_v1';
 const AUTH_CREDENTIALS_KEY = 'fc_admin_credentials_v1';
 
-// Default credentials if not customized
+// Default credentials configured for Francisco Carle
 const DEFAULT_USERNAME = 'francisco.carle@gmail.com';
-// SHA-256 hash for default password: 'admin'
-const DEFAULT_PASSWORD_HASH = '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918'; // 'admin'
+// SHA-256 hash for 'Manzana9'
+const DEFAULT_PASSWORD_HASH = '5d39331353713114d25ccca60219c6ab2f7eb935b0e90c1cf8bf027dbd25376f';
 
 /**
  * Hash a string using SHA-256 with standard Web Crypto API
@@ -19,7 +20,7 @@ export const sha256 = async (str: string): Promise<string> => {
   return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
 };
 
-interface StoredCredentials {
+export interface StoredCredentials {
   username: string;
   passwordHash: string;
 }
@@ -39,11 +40,47 @@ export const getStoredCredentials = (): StoredCredentials => {
   };
 };
 
-export const saveCredentials = (creds: StoredCredentials) => {
+export const getCloudCredentials = async (): Promise<StoredCredentials | null> => {
+  const { db } = initFirebase();
+  if (!db) return null;
+  try {
+    const docRef = doc(db, 'site_content', 'admin_security');
+    const docSnap = await getDoc(docRef);
+    if (docSnap.exists()) {
+      const data = docSnap.data();
+      if (data.username && data.passwordHash) {
+        return {
+          username: data.username,
+          passwordHash: data.passwordHash
+        };
+      }
+    }
+  } catch (e) {
+    console.warn('Could not read cloud security credentials:', e);
+  }
+  return null;
+};
+
+export const saveCredentials = async (creds: StoredCredentials) => {
   try {
     localStorage.setItem(AUTH_CREDENTIALS_KEY, JSON.stringify(creds));
   } catch (e) {
-    console.error('Error saving credentials:', e);
+    console.error('Error saving local credentials:', e);
+  }
+
+  // Also sync to Cloud Firestore if connected
+  const { db } = initFirebase();
+  if (db) {
+    try {
+      const docRef = doc(db, 'site_content', 'admin_security');
+      await setDoc(docRef, {
+        username: creds.username,
+        passwordHash: creds.passwordHash,
+        updatedAt: Date.now()
+      }, { merge: true });
+    } catch (e) {
+      console.warn('Could not sync security credentials to Firestore:', e);
+    }
   }
 };
 
@@ -69,7 +106,7 @@ export const loginAdmin = async (
 ): Promise<{ success: boolean; error?: string }> => {
   const cleanUser = usernameInput.trim().toLowerCase();
   
-  // 1. Try Firebase Auth if configured
+  // 1. Try Firebase Auth if configured and input is an email
   const { auth } = initFirebase();
   if (auth && cleanUser.includes('@')) {
     try {
@@ -82,25 +119,25 @@ export const loginAdmin = async (
       }
       return { success: true };
     } catch (fbErr: any) {
-      console.warn('Firebase auth attempt failed, checking local credentials...', fbErr.message);
+      // Continue to verify hash
     }
   }
 
-  // 2. Validate against local SHA-256 hashed credentials
-  const creds = getStoredCredentials();
+  // 2. Check cloud credentials if available, fallback to local storage / default
+  let creds = await getCloudCredentials();
+  if (!creds) {
+    creds = getStoredCredentials();
+  } else {
+    try {
+      localStorage.setItem(AUTH_CREDENTIALS_KEY, JSON.stringify(creds));
+    } catch (e) {}
+  }
+
   const inputHash = await sha256(passwordInput);
 
-  const usernameMatches = 
-    cleanUser === creds.username.toLowerCase() || 
-    cleanUser === 'admin' ||
-    cleanUser === 'francisco' ||
-    cleanUser === 'francisco.carle@gmail.com';
-
-  const passwordMatches = 
-    inputHash === creds.passwordHash || 
-    passwordInput === 'admin' || 
-    passwordInput === 'admin123' ||
-    inputHash === DEFAULT_PASSWORD_HASH;
+  // Strict check: both username and SHA-256 hash must match exactly
+  const usernameMatches = cleanUser === creds.username.trim().toLowerCase();
+  const passwordMatches = inputHash === creds.passwordHash;
 
   if (usernameMatches && passwordMatches) {
     const tokenObj = { user: creds.username, timestamp: Date.now(), method: 'local' };
@@ -128,13 +165,15 @@ export const changeAdminCredentials = async (
   newUsername: string,
   newPassword?: string
 ): Promise<{ success: boolean; error?: string }> => {
-  const creds = getStoredCredentials();
+  let creds = await getCloudCredentials();
+  if (!creds) {
+    creds = getStoredCredentials();
+  }
+
   const currentHash = await sha256(currentPassword);
 
-  const passwordValid = 
-    currentHash === creds.passwordHash || 
-    currentPassword === 'admin' || 
-    currentPassword === 'admin123';
+  // Strict check: current password MUST match the stored password hash
+  const passwordValid = currentHash === creds.passwordHash;
 
   if (!passwordValid) {
     return { success: false, error: 'La contraseña actual ingresada es incorrecta.' };
@@ -150,6 +189,6 @@ export const changeAdminCredentials = async (
     passwordHash: newHash,
   };
 
-  saveCredentials(updated);
+  await saveCredentials(updated);
   return { success: true };
 };

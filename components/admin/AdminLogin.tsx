@@ -98,7 +98,7 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({
                   type="text"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                  placeholder="admin o tu email"
+                  placeholder="usuario o email"
                   required
                   className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white text-sm placeholder:text-slate-600 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
                 />
@@ -159,12 +159,6 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({
               )}
             </button>
           </form>
-
-          <div className="pt-4 border-t border-slate-800 text-center">
-            <p className="text-[11px] text-slate-500">
-              💡 <span className="font-semibold text-slate-400">Credencial inicial:</span> Usuario: <code className="text-primary-400">admin</code> | Clave: <code className="text-primary-400">admin</code>
-            </p>
-          </div>
         </div>
       </div>
     </div>
